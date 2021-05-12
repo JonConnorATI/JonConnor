@@ -7,7 +7,7 @@ Get me on +353 (0)87 1374592 or jonconnor@live.ie for a chat about any projects 
 Please view my projects here:
 
 <ul>
-<li><a href="https://github.com/JonConnorATI/JonConnorATI.git">About Me</a><ul><li><a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li></ul></li><li><a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades - Takes an input and grades it</a></li><li></li><a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a></ul>
+<li><a href="https://github.com/JonConnorATI/JonConnorATI.git">About Me</a><ul><li><a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li></ul></li><li><a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades - Takes an input and grades it</a></li><li><a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a></li></ul>
 
 <!---
 JonConnorATI/JonConnorATI is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
