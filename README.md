@@ -8,7 +8,7 @@ Please view my projects here:
 
 <ul>
     <li><a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> includes <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li>
-    <li><a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades - Takes an input and grades it</a></li>
+    <li><a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades</a> - Takes an input and grades it. Used in the <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/automation.html">Automation</a> section of <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> to show and explain how cucumber works.</li>
     <li><a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a></li>
     <li>More to come, check back soon</li>
 </ul>
