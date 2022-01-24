@@ -2,7 +2,7 @@ Jon Connor, Dublin.
 
 Software Tester - Manual and Automation (Java/Selenium).
 
-Get me on +353 (0)87 1374592, <a href="https://www.linkedin.com/in/jonconnordublin/">LinkedIn</a> or <a href="mailto:jonconnor@live.ie" target="_blank">Email</a> for a chat about any projects or roles you have coming up.
+Get me on <a href="https://www.linkedin.com/in/jonconnordublin/">LinkedIn</a> or drop me an <a href="mailto:jonconnor@live.ie" target="_blank">Email</a> for a chat about any projects or roles you have coming up.
 
 Please view my projects here:
 
