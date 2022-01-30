@@ -13,7 +13,6 @@ Please view my projects here:
     <li><a href="https://jonconnorati.github.io/Membership-ChristmasCountdown/">Christmas Countdown</a> - a chrsitmas countdown for a friend who loves Christmas.</li>
     <li><a href="https://github.com/JonConnorATI/Shopping">Shopping</a> - a cucumber test framework, view the latest run in this <a href="https://reports.cucumber.io/reports/8420049a-8510-4282-b62e-96e385296dc7">cucumber</a> report.
     <li>More to come, check back soon</li>
-</ul>
 
 <!---
 JonConnorATI/JonConnorATI is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
