@@ -7,11 +7,12 @@ Get me on <a href="https://www.linkedin.com/in/jonconnordublin/">LinkedIn</a> or
 Please view my projects here:
 
 <ul>
-    <li><a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> includes <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li>
-    <li><a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades</a> - Takes an input and grades it. Used in the <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/automation.html">Automation</a> section of <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> to show and explain how cucumber works.</li>
-    <li><a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a> - a reminder of the information for a good bug report and why we need it.</li>
-    <li><a href="https://jonconnorati.github.io/Membership-ChristmasCountdown/">Christmas Countdown</a> - a chrsitmas countdown for a friend who loves Christmas.</li>
-    <li><a href="https://github.com/JonConnorATI/Shopping">Shopping</a> - a cucumber test framework, view the latest run in this <a href="https://reports.cucumber.io/reports/8420049a-8510-4282-b62e-96e385296dc7">cucumber</a> report.
+    <li>Framework <a href="https://github.com/JonConnorATI/Shopping">Shopping</a> - a cucumber test framework, view the latest run in this <a href="https://reports.cucumber.io/reports/8420049a-8510-4282-b62e-96e385296dc7">cucumber</a> report.
+    <li>Some web content - <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> includes <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li>
+    <li>A web page - <a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades</a> - Takes an input and grades it. Used in the <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/automation.html">Automation</a> section of <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> to show and explain how cucumber works.</li>
+    <li>A web page - <a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a> - a reminder of the information for a good bug report and why we need it.</li>
+    <li>A web page - <a href="https://jonconnorati.github.io/Membership-ChristmasCountdown/">Christmas Countdown</a> - a chrsitmas countdown for a friend who loves Christmas.</li>
+    
     <li>More to come, check back soon</li>
 
 <!---
