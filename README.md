@@ -7,7 +7,7 @@ Get me on <a href="https://www.linkedin.com/in/jonconnordublin/">LinkedIn</a> or
 Please view my projects here:
 
 <ul>
-    <li>Two Frameworks: <a href="https://github.com/JonConnorATI/Shopping">Shopping</a>, and this one <a href='https://github.com/JonConnorATI/Donuts'>Donuts</a>. View the latest runs in these cucumber reports <a href='https://reports.cucumber.io/reports/b9709728-8667-4bdf-b966-a23c67dd9962'>Shopping</a> and <a href="https://reports.cucumber.io/reports/8420049a-8510-4282-b62e-96e385296dc7">cucumber</a> Donuts.</li>
+    <li>Two Frameworks: <a href="https://github.com/JonConnorATI/Shopping">Shopping</a>, and <a href='https://github.com/JonConnorATI/Donuts'>Donuts</a>. View the latest runs in these cucumber reports <a href='https://reports.cucumber.io/reports/b9709728-8667-4bdf-b966-a23c67dd9962'>Shopping</a> and <a href="https://reports.cucumber.io/reports/8420049a-8510-4282-b62e-96e385296dc7">Donuts</a>.</li>
     <li>Some web content - <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> includes <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/bdd.html">BDD/Cucumber/Automation</a></li>
     <li>A web page - <a href ="https://jonconnorati.github.io/MyBDD_version1.github.io/Grades.html">Grades</a> - Takes an input and grades it. Used in the <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/automation.html">Automation</a> section of <a href="https://jonconnorati.github.io/MyBDD_version1.github.io/">About Me</a> to show and explain how cucumber works.</li>
     <li>A web page - <a href="https://jonconnorati.github.io/BugReports/">Bug Reports</a> - a reminder of the information for a good bug report and why we need it.</li>
