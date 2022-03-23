@@ -2,9 +2,11 @@ Jon Connor, Dublin.
 
 Software Tester - Manual and Automation (Java/Selenium).
 
+I am looking to get on a project where I can use my abilities, of talking to the users, and identifying missing or incomplete requirements, along with my self-taught automation skills to help deliver the software that the business wants.
+
 Get me on <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank">LinkedIn</a> or drop me an <a href="mailto:jonconnor@live.ie" target="_blank">Email</a> for a chat about any projects or roles you have coming up.
 
-Please view my projects here:
+Please view my projects here, and if you have any suggestions or feedback I would love to hear it:
 
 <ul>
     <li>Two Cucumber test frameworks: <a href="https://github.com/JonConnorATI/Shopping" target="_blank">Shopping</a>, and <a href="https://github.com/JonConnorATI/Donuts" target="_blank">Donuts</a>. Created the frameworks to 'test' these active commercial websites, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a> and <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>, which includes a method to use Chrome, Edge or Firefox browsers. View the latest runs in these cucumber reports <a href="https://reports.cucumber.io/reports/666bb622-5228-4578-b188-9fef13053550" target="_blank">Shopping</a> and <a href="https://reports.cucumber.io/reports/e634702e-60cd-494d-8045-d6a1b2e71f76" target="_blank">Donuts</a>.</li> 
