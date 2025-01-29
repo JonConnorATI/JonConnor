@@ -105,7 +105,15 @@ The framework is not easily understood by somebody unfamiliar with code or no kn
 The advantage of using TestNG Framework vs Cucumber Framework is there is one less layer to create and maintain but the trade off is non-technical members of the team may not be able to follow it.
 
 ### Reports
-To do - need to add surefire reports into pom and change the yaml file to download these to target folder
+I created a yaml file in github actions that is set to kick off the test execution in the cloud. When the run has completed a surefire zip report can be downloaded from the Artifacts section. When downloaded and unzipped, the following reports are available:
+-  emailable-report
+-  index
+-  suite/test
+
+They all display the same information in slightly different formats.
+
+You can View the latest run <a href="https://github.com/JonConnorATI/donutsPageObjectModel/actions/runs/13041287156" target="_blank">here</a> and access the zip file from the artifacts section.
+
 
 ______________________________
 
