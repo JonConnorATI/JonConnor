@@ -70,8 +70,17 @@ View the latest run <a href="https://reports.cucumber.io/reports/ae8d4eea-eaf4-4
 I decided to convert the Cucumber framework Donuts into a page object model which runs the tests using TestNG, to get familiar with this popular framework method.
 
 ## POM Donuts <a name="pomdonuts"></a> <a href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
-The Cucumber Donuts framework was converted to work with Page Object/TestNG by creating a java file with the test steps snd a testng xml file which instructs the framework on which test files to select and which tests in that file to run. The result is that the tests are not as easily read by somebody with less technical knowledge because the non technical layer, Cucumber, is not present. So its importamt to cretae method names in the tests that are a descriptive as possible eg HomePage.acceptCookies();
+The Cucumber Donuts framework was converted to work with Page Object/TestNG:
+<ul>
+  <li>created a java file with the test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a></li>
+  <li>created a testNG xml file. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a></li>
+</ul>
+The testng xml file instructs the framework which test files to select and which tests in those files to run.<br><br>
+The framework is not easily understood by somebody unfamiliar with code or no knowledge of the business domain because the non technical layer, Cucumber, is not present. So its important to cretae method names in the tests that are a descriptive as possible eg 
+ ```HomePage.acceptCookies();``` so it is easier to understand what the step of code is doing in the website.<br><br>
+The advantage of using TestNG Framework vs Cucumber Framework is there is one less layer to create and maintain but the trade off is non-technical members of the team will not be able to follow it.
 
+### Reports
 
 
 <!--
