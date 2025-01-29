@@ -1,8 +1,11 @@
 # Jon Connor, Dublin.<br><br>Software Tester - Manual and Automation 
+Welcome to my GitHub page!<br>
 
-Get me on <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank">LinkedIn</a> or drop me an <a href="mailto:jonconnor@live.ie" target="_blank">Email</a> for a chat about any projects or roles you have coming up.
+Here, you’ll find a collection of automation frameworks and various other projects I’ve created. I believe in learning by doing, so whenever I pick up a new skill or concept, I build practical examples to deepen my understanding and share my journey with others.<br>
 
-# Content
+Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank">LinkedIn</a> or drop me an <a href="mailto:jonconnor@live.ie" target="_blank">Email</a> for a chat about any projects or roles you have coming up. I’m always open to discussing new opportunities and ideas!
+
+# Table of Contents
 
 **[Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
    * [Shopping](#Shopping)
@@ -11,13 +14,17 @@ Get me on <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank"
 **[Page Object Model with Java/Selenium/TestNG](#pom)**
   * [POM Donuts](#pomdonuts)
 
+**[Robot Framework with playwright library](#Robot_Donuts)**
+  * [Robot Donuts](#RobotDonuts)
+
+
 Please view my projects here, and if you have any suggestions or feedback I would love to hear it:
 
 # Cucumber Frameworks with Java/Selenium <a name="CucumberFrameworks"></a>
-To help practice writing Cucumber features as well as getting more familiar with the Gherkin syntax and how it integrates with Java I created two frameworks that 'test' existing commercial websites*<br>
-*<sub>I didn't have any involvement with the actual testing or development of the websites</sub>
+To help practice writing Cucumber features as well as getting more familiar with the Gherkin syntax and how it integrates with Java I created two frameworks that 'test' existing commercial websites<br>
+
 ## Shopping <a name="Shopping"></a> <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">(Link to github repo)</a>
-This framework 'tests' the clothes shopping website, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a>
+This framework 'tests' the clothes shopping website, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a>[^1]
 ### Features
 <ul>
     <li>Login Feature</li>
@@ -48,7 +55,7 @@ View the latest run on the cucumber cloud, <a href="https://reports.cucumber.io/
 I figured out how to create a yaml file for github actions but unfortunately this was sometime after I'd created this repositry. When I tried to schedule a regular execution of the tests using github actions I found that the tests would not work in headless mode, and that this was probably down to security/configuration settings on the website. It wasn't possible for me to schedule regular executions in the cloud. So I created the repository below.
    
 ## Donuts <a name="Donuts"></a> <a href="https://github.com/JonConnorATI/Donuts" target="_blank">(Link to github repo)</a>
-This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>
+This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>[^2]
 ### Features
 <ul>
     <li>Order Now Feature</li>
@@ -82,8 +89,14 @@ The framework is not easily understood by somebody unfamiliar with code or no kn
 The advantage of using TestNG Framework vs Cucumber Framework is there is one less layer to create and maintain but the trade off is non-technical members of the team will not be able to follow it.
 
 ### Reports
+To do - need to add surefire reports into pom and change the yaml file to download these to target folder
 
+## Robot Donuts <a name="RobotDonuts"></a> <a href="https://github.com/JonConnorATI/Donuts" target="_blank">(Link to github repo)</a>
+This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>[^2]
 
+##### FOOTNOTES
+[^1]: I did not have any involvement with the actual testing or development of the M and M website
+[^2]: I did not have any involvement with the actual testing or development of the OffBeatDonuts website
 <!--
 
      <li>Two Cucumber test frameworks: <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">Shopping</a>, and <a href="https://github.com/JonConnorATI/Donuts" target="_blank">Donuts</a>. Created the frameworks to 'test' these active commercial websites, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a> and <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>, which includes a method to use Chrome, Edge or Firefox browsers. As I've updated the frameworks to use WebDriver Manager, there's no need to download the webdrivers for the browsers. View the latest runs in these cucumber reports <a href="https://reports.cucumber.io/reports/18ca5276-2cd9-4b9c-9a25-a6ccedbd5375" target="_blank">Shopping</a> and .</li>
