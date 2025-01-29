@@ -9,6 +9,7 @@ Get me on <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank"
    * [Donuts](#Donuts)
 
 **[Page Object Model with Java/Selenium/TestNG](#pom)**
+  * [POM Donuts](#pomdonuts)
 
 Please view my projects here, and if you have any suggestions or feedback I would love to hear it:
 
@@ -68,7 +69,8 @@ View the latest run <a href="https://reports.cucumber.io/reports/ae8d4eea-eaf4-4
 # Page Object Model with Java/Selenium/TestNG <a name="pom"></a>
 I decided to convert the Cucumber framework Donuts into a page object model which runs the tests using TestNG, to get familiar with this popular framework method.
 
-## POM Donuts <a name="pom_donuts"></a> <a href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
+## POM Donuts <a name="pomdonuts"></a> <a href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
+The Cucumber Donuts framework was converted to work with Page Object/TestNG by creating a java file with the test steps snd a testng xml file which instructs the framework on which test files to select and which tests in that file to run. The result is that the tests are not as easily read by somebody with less technical knowledge because the non technical layer, Cucumber, is not present. So its importamt to cretae method names in the tests that are a descriptive as possible eg HomePage.acceptCookies();
 
 
 
