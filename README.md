@@ -30,7 +30,7 @@ __________________________________
 # Cucumber Frameworks with Java/Selenium <a name="CucumberFrameworks"></a>
 To help practice writing Cucumber features as well as getting more familiar with the Gherkin syntax and how it integrates with Java I created two frameworks that 'test' existing commercial websites
 
-## <a name="Shopping" href="https://github.com/JonConnorATI/ShopMandM" target="_blank">Shopping</a>
+## Shopping<a name="Shopping"></a> <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">(Link to github repo)</a>
 This framework 'tests' the clothes shopping website, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a>[^1]
 ### Features
 <ul>
