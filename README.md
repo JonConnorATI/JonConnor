@@ -125,7 +125,7 @@ The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 - Test Suite <a id="TestSuite"></a>
    - A java file with the test cases and Test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a>
       - Test Cases <a id="PomTestCases"></a>
-         - Economy <a id="PomDonuts_Economy"></a>
+         - Economy <a id="PomDonuts_Economy"></a> ![Economy Test Steps](/assets/images/tux.png)
          - Hungry <a id="PomDonuts_Hungry"></a>
          - Luxury <a id="PomDonuts_Luxury"></a>
     
