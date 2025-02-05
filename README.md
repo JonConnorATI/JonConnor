@@ -31,10 +31,9 @@ ____________________________________________________
   * [<b>POM Donuts<b>](#pomdonuts)
      * [Test NG](#TestNG)
      * [Test Suite](#TestSuite)
-         * [Test Cases](#PomTestCases)
-            * [Economy](#PomDonuts_Economy)
-            * [Hungry](#PomDonuts_Hungry)
-            * [Luxury](#PomDonuts_Luxury)
+         * [Economy](#PomDonuts_Economy)
+         * [Hungry](#PomDonuts_Hungry)
+         * [Luxury](#PomDonuts_Luxury)
      * [Reports](#PomDonuts_reports)
    
 ____________________________________________________
@@ -123,11 +122,10 @@ The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 - Test NG <a id="TestNG"></a>
    - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
 - Test Suite <a id="TestSuite"></a>
-   - A java file with the test cases and Test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a>
-      - Test Cases <a id="PomTestCases"></a>
-         - Economy <a id="PomDonuts_Economy"></a> ![Economy Test Steps](/assets/images/tux.png)
-         - Hungry <a id="PomDonuts_Hungry"></a>
-         - Luxury <a id="PomDonuts_Luxury"></a>
+   - A java file with the test cases and Test steps. See ![Order Now Donut Tests](/assets/images/pom_test_suite.png)
+     - Economy <a id="PomDonuts_Economy"></a> Test Case ![Economy Test Steps](/assets/images/pom_Economy.png)
+     - Hungry <a id="PomDonuts_Hungry"></a>
+     - Luxury <a id="PomDonuts_Luxury"></a>
     
 
 The testng xml file instructs the framework which test files to select and which test cases in those files to run.
