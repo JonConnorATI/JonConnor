@@ -8,8 +8,22 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
 # Table of Contents
 
 **[Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
-   * [Shopping](#Shopping)
-   * [Donuts](#Donuts)
+   
+   * [<b>Shopping Framework</b>](#Shopping)
+     * [Features](#Features)
+       * [LogIn](#LogIn)
+       * [Account Page](#AccountPage)
+       * [Change Password](#ChangePassword)
+       * [Find Cheapest Jeans](#FindJeans)
+       * [Cart Cache](#Cart)
+     * [Reports](#Reports)
+  
+   * [<b>Donuts Framework</b>](#Donuts)
+     * [Feature](#Dfeatures)
+       * [Order Now Scenarios](#OrderNow)
+         * [Economy](#Donuts_Economy)
+         * [Hungry](#Donuts_Hungry)
+         * [Luxury](#Donuts_Luxury)
 
 **[Page Object Model with Java/Selenium/TestNG](#pom)**
   * [POM Donuts](#pomdonuts)
@@ -32,31 +46,31 @@ To help practice writing Cucumber features as well as getting more familiar with
 
 ## Shopping<a name="Shopping"></a> <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">(Link to github repo)</a>
 This framework 'tests' the clothes shopping website, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a>[^1]
-### Features
+### Features <a id="Features"></a>
 <ul>
-    <li>Login Feature</li>
+    <li id="LogIn">Login Feature</li>
         <ul>
             <li>Basic test to verify only valid combination of username and password can successfully log in. Uses the Gherkin 'Scenario Outline' and 'Examples' syntax</li>
         </ul>
-    <li>Account Page Feature</li>
+    <li id="AccountPage">Account Page Feature</li>
         <ul>
             <li>Visits each section and makes changes to verify edits can be made</li>
         </ul>
-    <li>Change Password Feature</li>
+    <li id="ChangePassword">Change Password Feature</li>
         <ul>
             <li>Changes the password then logs in with the new password and changes it back to the original value</li>
         </ul>
-    <li>Find the cheapest Jeans Feature</li>
+    <li id="FindJeans">Find the cheapest Jeans Feature</li>
         <ul>
             <li>Searches for a pair of jeans with given parameters of size and fit, sorts the results by lowest price and confirms the cheapest are first in the list</li>
         </ul>    
-    <li>Cart Cache Feature</li>
+    <li id="Cart">Cart Cache Feature</li>
         <ul>
             <li>User logs in and selects an item to add to cart, then logs out. User logs in again and verifies the cart still has the previously added item</li>
         </ul>
 </ul>
 
-### Reports
+### Reports <a id="Reports"></a>
 I was able to link my test executions on my laptop to the cucumber cloud by storing an Environment token from Cucumber in my IDE's output settings.
 View the latest run on the cucumber cloud, <a href="https://reports.cucumber.io/reports/18ca5276-2cd9-4b9c-9a25-a6ccedbd5375" target="_blank">here.</a>
 
@@ -65,15 +79,15 @@ I figured out how to create a yaml file for github actions but unfortunately thi
    
 ## Donuts <a name="Donuts"></a> <a href="https://github.com/JonConnorATI/Donuts" target="_blank">(Link to github repo)</a>
 This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>[^2]
-### Features
+### Features <a id="Dfeatures"></a>
 <ul>
-    <li>Order Now Feature</li>
+    <li id="OrderNow">Order Now Feature</li>
         <ul>
             <li>This feature has three scenarios. Each scenario adds more items and verifies the items added are included in the shopping cart</li>
                 <ul>
-                    <li>Economy, just adds the cheapest donuts </li>
-                    <li>Hungry, selects 12 different types of donuts</li>
-                    <li>Luxury, adds 2 dozen donuts, candles, card with messages and bows</li>
+                    <li id="Donuts_Economy">Economy, just adds the cheapest donuts </li>
+                    <li id="Donuts_Hungry">Hungry, selects 12 different types of donuts</li>
+                    <li id="Donuts_Luxury">Luxury, adds 2 dozen donuts, candles, card with messages and bows</li>
                 </ul>
         </ul>        
 </ul>
