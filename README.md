@@ -7,7 +7,7 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
 
 # Table of Contents
 
-**1. [Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
+**[1. Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
    
    * [<b>Shopping Framework</b>](#Shopping)
      * [Features](#Features)
@@ -25,18 +25,24 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
          * [Hungry](#Donuts_Hungry)
          * [Luxury](#Donuts_Luxury)
      * [Reports](#Donuts_reports)
+____________________________________________________
 
 **[2. Page Object Model with Java/Selenium/TestNG](#pom)**
   * [<b>POM Donuts<b>](#pomdonuts)
      * [Test NG](#TestNG)
-     * [Test Suite](#OrderNow)
-         * [Test Cases](#Donuts_Economy)
-            * [Hungry](#Donuts_Hungry)
-            * [Luxury](#Donuts_Luxury)
-     * [Reports](#Donuts_reports)
+     * [Test Suite](#TestSuite)
+         * [Test Cases](#PomTestCases)
+            * [Economy](#PomDonuts_Economy)
+            * [Hungry](#PomDonuts_Hungry)
+            * [Luxury](#PomDonuts_Luxury)
+     * [Reports](#PomDonuts_reports)
+   
+____________________________________________________
 
 **[3. Robot Framework with Browser library (playwright)](#Robot_Donuts)**
   * [Robot Donuts](#RobotDonuts)
+
+____________________________________________________
 
 **[4. Other Content I have created](#other)**
   * [My Understanding of BDD](#bdd)
@@ -44,9 +50,11 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
   * [Grades](#grades)
   * [About Me](#aboutme)
 
+____________________________________________________
+
 **[5. Whats Next?](#What)**
 
-__________________________________
+______________________________________________________________________________________
 
 # Cucumber Frameworks with Java/Selenium <a name="CucumberFrameworks"></a>
 To help practice writing Cucumber features as well as getting more familiar with the Gherkin syntax and how it integrates with Java I created two frameworks that 'test' existing commercial websites
@@ -113,14 +121,14 @@ I decided to convert the Cucumber framework Donuts into a page object model whic
 The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 
 - Test NG <a id="TestNG"></a>
-      - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
-
+   - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
 - Test Suite <a id="TestSuite"></a>
-      - A java file with the test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a>
-         - Test Cases
-               - Economy
-               - Hungry
-               - Luxury
+   - A java file with the test cases and Test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a>
+      - Test Cases <a id="PomTestCases"></a>
+         - Economy <a id="PomDonuts_Economy"></a>
+         - Hungry <a id="PomDonuts_Hungry"></a>
+         - Luxury <a id="PomDonuts_Luxury"></a>
+    
 
 The testng xml file instructs the framework which test files to select and which test cases in those files to run.
 
@@ -130,7 +138,7 @@ The framework is not easily understood by somebody unfamiliar with code or no kn
  
 The advantage of using TestNG Framework vs Cucumber Framework is there is one less layer to create and maintain but the trade off is non-technical members of the team may not be able to follow it.
 
-### Reports
+### Reports <a id="PomDonuts_reports"></a>
 I created a yaml file in github actions that is set to kick off the test execution in the cloud. When the run has completed a surefire zip report can be downloaded from the Artifacts section. When downloaded and unzipped, the following reports are available:
 -  emailable-report
 -  index
