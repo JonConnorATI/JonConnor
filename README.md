@@ -120,12 +120,15 @@ I decided to convert the Cucumber framework Donuts into a page object model whic
 The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 
 - Test NG <a id="TestNG"></a>
-   - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
+  - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
 - Test Suite <a id="TestSuite"></a>
-   - A java file with the test cases and Test steps. See ![Order Now Donut Tests](/assets/images/pom_test_suite.png)
-     - Economy <a id="PomDonuts_Economy"></a> Test Case ![Economy Test Steps](/assets/images/pom_Economy.png)
-     - Hungry <a id="PomDonuts_Hungry"></a>
-     - Luxury <a id="PomDonuts_Luxury"></a>
+  - A java file with the test cases and Test steps.  
+    ![Order Now Donut Tests](/assets/images/pom_test_suite.png)
+    - Economy <a id="PomDonuts_Economy"></a> Test Case  
+      ![Economy Test Steps](/assets/images/pom_Economy.png)
+    - Hungry <a id="PomDonuts_Hungry"></a>
+    - Luxury <a id="PomDonuts_Luxury"></a>
+
     
 
 The testng xml file instructs the framework which test files to select and which test cases in those files to run.
