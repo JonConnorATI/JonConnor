@@ -121,7 +121,7 @@ The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 
 - Test NG <a id="TestNG"></a>
   - A testNG xml file, was created.
-    ![Economy Test Steps](/assets/images/testNGxml.png)
+    ![Test NG XML FILE](/assets/images/testNGxml.png)
 - Test Suite <a id="TestSuite"></a>
   - A java file with the test cases and Test steps.  
     ![Order Now Donut Tests](/assets/images/pom_test_suite.png)
