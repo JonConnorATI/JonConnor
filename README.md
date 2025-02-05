@@ -155,9 +155,17 @@ The advantage of using TestNG Framework vs Cucumber Framework is there is one le
 ### Reports <a id="PomDonuts_reports"></a>
 I created a yaml file in github actions that is set to kick off the test execution in the cloud. When the run has completed a surefire zip report can be downloaded from the Artifacts section. When downloaded and unzipped, the following reports are available:
 -  emailable-report
--  index
--  suite/test
-
+    
+      ![email report](/assets/images/report2.png)
+   
+-  index-report
+    
+      ![Index report](/assets/images/report1.png)
+   
+-  suite/test-report
+    
+      ![suite/test report](/assets/images/report3.png)
+   
 They all display the same information in slightly different formats.
 
 You can View the latest run <a href="https://github.com/JonConnorATI/donutsPageObjectModel/actions/runs/13041287156" target="_blank">here</a> and access the zip file from the artifacts section.
