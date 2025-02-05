@@ -7,7 +7,7 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
 
 # Table of Contents
 
-**[Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
+**1. [Cucumber Frameworks with Java/Selenium](#CucumberFrameworks)**
    
    * [<b>Shopping Framework</b>](#Shopping)
      * [Features](#Features)
@@ -26,19 +26,25 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
          * [Luxury](#Donuts_Luxury)
      * [Reports](#Donuts_reports)
 
-**[Page Object Model with Java/Selenium/TestNG](#pom)**
-  * [POM Donuts](#pomdonuts)
+**[2. Page Object Model with Java/Selenium/TestNG](#pom)**
+  * [<b>POM Donuts<b>](#pomdonuts)
+     * [Test NG](#TestNG)
+     * [Test Suite](#OrderNow)
+         * [Test Cases](#Donuts_Economy)
+            * [Hungry](#Donuts_Hungry)
+            * [Luxury](#Donuts_Luxury)
+     * [Reports](#Donuts_reports)
 
-**[Robot Framework with Browser library (playwright)](#Robot_Donuts)**
+**[3. Robot Framework with Browser library (playwright)](#Robot_Donuts)**
   * [Robot Donuts](#RobotDonuts)
 
-**[Other Content I have created](#other)**
+**[4. Other Content I have created](#other)**
   * [My Understanding of BDD](#bdd)
   * [Bug Reports](#Bugs)
   * [Grades](#grades)
   * [About Me](#aboutme)
 
-**[Whats Next?](#What)**
+**[5. Whats Next?](#What)**
 
 __________________________________
 
@@ -107,14 +113,16 @@ I decided to convert the Cucumber framework Donuts into a page object model whic
 The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 
 - Test NG <a id="TestNG"></a>
-      - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a> 
-  
-  <li id="TestNG">A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a></li>
-  <li id="TestSuite">A java file with the test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a></li>
+      - A testNG xml file, was created. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/testng.xml" target="_blank">here</a>
 
+- Test Suite <a id="TestSuite"></a>
+      - A java file with the test steps. See <a href="https://github.com/JonConnorATI/donutsPageObjectModel/blob/main/src/test/java/tests/OrderNowDonutsTests.java" target="_blank">here</a>
+         - Test Cases
+               - Economy
+               - Hungry
+               - Luxury
 
-The testng xml file instructs the framework which test files to select and which tests in those files to run.
-
+The testng xml file instructs the framework which test files to select and which test cases in those files to run.
 
 The framework is not easily understood by somebody unfamiliar with code or no knowledge of the business domain because the non technical layer, Cucumber, is not present. So its important to cretae method names in the tests that are a descriptive as possible eg ```HomePage.acceptCookies();``` 
  so it is easier to understand what the step of code is doing in the website.
