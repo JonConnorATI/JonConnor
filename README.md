@@ -135,9 +135,11 @@ The Cucumber Donuts framework was converted to work with Page Object/TestNG:
       
     - Hungry <a id="PomDonuts_Hungry"></a> Test Case
     
-      ![Economy Test Steps](/assets/images/pom_Economy.png)
+      ![Hungry Test Steps](/assets/images/pomHungry.png)
       
-    - Luxury <a id="PomDonuts_Luxury"></a>
+    - Luxury <a id="PomDonuts_Luxury"></a> Test Case
+    
+      ![Luxury Test Steps](/assets/images/pomLuxury.png)
 
 
     
