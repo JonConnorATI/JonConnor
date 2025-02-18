@@ -65,6 +65,9 @@ This framework 'tests' the clothes shopping website, <a href="https://www.mandmd
     <li id="LogIn">Login Feature</li>
         <ul>
             <li>Basic test to verify only valid combination of username and password can successfully log in. Uses the Gherkin 'Scenario Outline' and 'Examples' syntax</li>
+
+             ![Log in cucumber feature file](/assets/images/loginfeature.png)
+           
         </ul>
     <li id="AccountPage">Account Page Feature</li>
         <ul>
