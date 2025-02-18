@@ -96,6 +96,14 @@ I figured out how to create a yaml file for github actions but unfortunately thi
 ## Donuts <a name="Donuts"></a> <a href="https://github.com/JonConnorATI/Donuts" target="_blank">(Link to github repo)</a>
 This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>[^2]
 ### Features <a id="Dfeatures"></a>
+
+- Order Now Feature <a id="OrderNow"></a>
+
+  - This feature has three scenarios. Each scenario adds more items and verifies the items added are included in the shopping cart
+
+    - Economy Just add the cheapest donuts <a id="Donuts_Economy"></a>
+
+![Economy Donuts feature](/assets/images/economydonutsfeature.png)
 <ul>
     <li id="OrderNow">Order Now Feature</li>
         <ul>
