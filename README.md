@@ -61,32 +61,25 @@ To help practice writing Cucumber features as well as getting more familiar with
 ## Shopping<a name="Shopping"></a> <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">(Link to github repo)</a>
 This framework 'tests' the clothes shopping website, <a href="https://www.mandmdirect.ie/" target="_blank">M and M direct</a>[^1]
 ### Features <a id="Features"></a>
-<ul>
-    <li id="LogIn">Login Feature</li>
-        <ul>
-            <li>Basic test to verify only valid combination of username and password can successfully log in. Uses the Gherkin 'Scenario Outline' and 'Examples' syntax</li>
 
-             <li>![Log in cucumber feature file](/assets/images/loginfeature.png)</li>
-             
-           
-        </ul>
-    <li id="AccountPage">Account Page Feature</li>
-        <ul>
-            <li>Visits each section and makes changes to verify edits can be made</li>
-        </ul>
-    <li id="ChangePassword">Change Password Feature</li>
-        <ul>
-            <li>Changes the password then logs in with the new password and changes it back to the original value</li>
-        </ul>
-    <li id="FindJeans">Find the cheapest Jeans Feature</li>
-        <ul>
-            <li>Searches for a pair of jeans with given parameters of size and fit, sorts the results by lowest price and confirms the cheapest are first in the list</li>
-        </ul>    
-    <li id="Cart">Cart Cache Feature</li>
-        <ul>
-            <li>User logs in and selects an item to add to cart, then logs out. User logs in again and verifies the cart still has the previously added item</li>
-        </ul>
-</ul>
+- Login Feature <a id="LogIn"></a>
+  - Basic test to verify only valid combination of username and password can successfully log in. Uses the Gherkin 'Scenario Outline' and 'Examples' syntax.
+
+![Log in cucumber feature file](/assets/images/loginfeature.png)
+    
+- Account Page Feature <a id="AccountPage"></a>
+  - Visits each section and makes changes to verify edits can be made.
+
+ ![Log in cucumber feature file](/assets/images/accpagefeature.png)
+
+- Change Password Feature <a id="ChangePassword"></a>
+  - Changes the password then logs in with the new password and changes it back to the original value.
+
+- Find the Cheapest Jeans Feature <a id="FindJeans"></a>
+  - Searches for a pair of jeans with given parameters of size and fit, sorts the results by lowest price and confirms the cheapest are first in the list.
+
+- Cart Cache Feature <a id="Cart"></a>
+  - User logs in and selects an item to add to cart, then logs out. User logs in again and verifies the cart still has the previously added item.
 
 ### Reports <a id="Reports"></a>
 I was able to link my test executions on my laptop to the cucumber cloud by storing an Environment token from Cucumber in my IDE's output settings.
