@@ -86,7 +86,7 @@ This framework 'tests' the clothes shopping website, <a href="https://www.mandmd
 
 ### Reports <a id="Reports"></a>
 I was able to link my test executions on my laptop to the cucumber cloud by storing an Environment token from Cucumber in my IDE's output settings.
-View the latest run on the cucumber cloud, <a href="https://reports.cucumber.io/reports/18ca5276-2cd9-4b9c-9a25-a6ccedbd5375" target="_blank">here.</a>
+View the latest run on the cucumber cloud, <a href="https://reports.cucumber.io/reports/303ee09c-95cd-48b3-af59-e330c29fb20e" target="_blank">here.</a>
 
 
 I figured out how to create a yaml file for github actions but unfortunately this was sometime after I'd created this repositry. When I tried to schedule a regular execution of the tests using github actions I found that the tests would not work in headless mode, and that this was probably down to security/configuration settings on the website. It wasn't possible for me to schedule regular executions in the cloud. So I created the repository below.
