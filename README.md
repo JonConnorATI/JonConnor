@@ -75,6 +75,8 @@ This framework 'tests' the clothes shopping website, <a href="https://www.mandmd
 - Change Password Feature <a id="ChangePassword"></a>
   - Changes the password then logs in with the new password and changes it back to the original value.
 
+![Change password feature](//assets/images/changepasswordfeature.png)
+
 - Find the Cheapest Jeans Feature <a id="FindJeans"></a>
   - Searches for a pair of jeans with given parameters of size and fit, sorts the results by lowest price and confirms the cheapest are first in the list.
 
