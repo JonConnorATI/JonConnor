@@ -222,9 +222,9 @@ View the latest github actions run <a href="https://github.com/JonConnorATI/Robo
 
 The reports are excellent and have lots of useful detail. Please take a look at the reports generated for a run in Chrome and Firefox
 
-* <a href="https://github.com/JonConnorATI/RobotDonuts/actions/runs/11809353226" target="_blank">here</a>Chrome(/assets/Reports/chrome/offBeatTest-log.html)
+* <a href="https://cdn.jsdelivr.net/gh/JonConnorATI/JonConnor@Jon_Edits/assets/Reports/chrome/offBeatTest-log.html" target="_blank">Chrome</a>
 
-* [Firefox](/assets/Reports/firefox/offBeatTest-log.html)
+* <a href="https://github.com/JonConnorATI/JonConnor/blob/Jon_Edits/assets/Reports/firefox/offBeatTest-log.html" target="_blank">Firefox</a>
 
 __________________________________
 
