@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="offBeat Donut Tests on FireFox" tests="5" errors="0" failures="0" skipped="0" time="108.662" timestamp="2025-02-19T11:17:42.328722">
+<testsuite name="001 Home Page" tests="1" errors="0" failures="0" skipped="0" time="25.257" timestamp="2025-02-19T11:17:42.355601">
+<testsuite name="Open Home Page" tests="1" errors="0" failures="0" skipped="0" time="25.244" timestamp="2025-02-19T11:17:42.357416">
+<testcase classname="offBeat Donut Tests on FireFox.001 Home Page.Open Home Page" name="Open the Browser and navigate to the homepage" time="25.043">
+</testcase>
+<properties>
+<property name="Documentation" value="Navigate to the homepage"/>
+</properties>
+</testsuite>
+</testsuite>
+<testsuite name="002 Order Now Tests" tests="3" errors="0" failures="0" skipped="0" time="81.505" timestamp="2025-02-19T11:18:07.613958">
+<testsuite name="001 Order Scenarios" tests="3" errors="0" failures="0" skipped="0" time="81.495" timestamp="2025-02-19T11:18:07.616963">
+<testcase classname="offBeat Donut Tests on FireFox.002 Order Now Tests.001 Order Scenarios" name="Customer is on a budget and orders lowest value donuts" time="20.561">
+</testcase>
+<testcase classname="offBeat Donut Tests on FireFox.002 Order Now Tests.001 Order Scenarios" name="Customer is hungry" time="42.891">
+</testcase>
+<testcase classname="offBeat Donut Tests on FireFox.002 Order Now Tests.001 Order Scenarios" name="Customer wants luxury" time="18.005">
+</testcase>
+<properties>
+<property name="Documentation" value="Test that verifys when I choose an item the total is reflected in the Cart"/>
+</properties>
+</testsuite>
+</testsuite>
+<testsuite name="1000 Close Browser" tests="1" errors="0" failures="0" skipped="0" time="1.872" timestamp="2025-02-19T11:19:29.118855">
+<testsuite name="Close browser" tests="1" errors="0" failures="0" skipped="0" time="1.834" timestamp="2025-02-19T11:19:29.125855">
+<testcase classname="offBeat Donut Tests on FireFox.1000 Close Browser.Close browser" name="Close the Browser" time="0.758">
+</testcase>
+<properties>
+<property name="Documentation" value="Close the Browser"/>
+</properties>
+</testsuite>
+</testsuite>
+</testsuite>

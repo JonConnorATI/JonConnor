@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="offBeat Donut Tests on Chromium" tests="5" errors="0" failures="0" skipped="0" time="80.866" timestamp="2025-02-19T11:14:22.467333">
+<testsuite name="001 Home Page" tests="1" errors="0" failures="0" skipped="0" time="12.190" timestamp="2025-02-19T11:14:22.488673">
+<testsuite name="Open Home Page" tests="1" errors="0" failures="0" skipped="0" time="12.178" timestamp="2025-02-19T11:14:22.490426">
+<testcase classname="offBeat Donut Tests on Chromium.001 Home Page.Open Home Page" name="Open the Browser and navigate to the homepage" time="11.994">
+</testcase>
+<properties>
+<property name="Documentation" value="Navigate to the homepage"/>
+</properties>
+</testsuite>
+</testsuite>
+<testsuite name="002 Order Now Tests" tests="3" errors="0" failures="0" skipped="0" time="65.094" timestamp="2025-02-19T11:14:34.679538">
+<testsuite name="001 Order Scenarios" tests="3" errors="0" failures="0" skipped="0" time="65.088" timestamp="2025-02-19T11:14:34.682185">
+<testcase classname="offBeat Donut Tests on Chromium.002 Order Now Tests.001 Order Scenarios" name="Customer is on a budget and orders lowest value donuts" time="14.711">
+</testcase>
+<testcase classname="offBeat Donut Tests on Chromium.002 Order Now Tests.001 Order Scenarios" name="Customer is hungry" time="32.184">
+</testcase>
+<testcase classname="offBeat Donut Tests on Chromium.002 Order Now Tests.001 Order Scenarios" name="Customer wants luxury" time="18.166">
+</testcase>
+<properties>
+<property name="Documentation" value="Test that verifys when I choose an item the total is reflected in the Cart"/>
+</properties>
+</testsuite>
+</testsuite>
+<testsuite name="1000 Close Browser" tests="1" errors="0" failures="0" skipped="0" time="3.558" timestamp="2025-02-19T11:15:39.775300">
+<testsuite name="Close browser" tests="1" errors="0" failures="0" skipped="0" time="3.535" timestamp="2025-02-19T11:15:39.779073">
+<testcase classname="offBeat Donut Tests on Chromium.1000 Close Browser.Close browser" name="Close the Browser" time="0.744">
+</testcase>
+<properties>
+<property name="Documentation" value="Close the Browser"/>
+</properties>
+</testsuite>
+</testsuite>
+</testsuite>

@@ -1,0 +1,3227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-02-19T11:14:22.463983" rpa="false" schemaversion="5">
+<suite id="s1" name="offBeat Donut Tests on Chromium">
+<suite id="s1-s1" name="001 Home Page" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\001_Home_Page">
+<suite id="s1-s1-s1" name="Open Home Page" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\001_Home_Page\Open_Home_Page.robot">
+<test id="s1-s1-s1-t1" name="Open the Browser and navigate to the homepage" line="7">
+<kw name="Open the browser and go to the homepage" owner="HomePageKeywords">
+<msg time="2025-02-19T11:14:22.675636" level="TRACE">Arguments: [  ]</msg>
+<kw name="New Browser" owner="Browser">
+<msg time="2025-02-19T11:14:22.677328" level="TRACE">Arguments: [ &lt;SupportedBrowsers.chromium: 1&gt; | headless=False ]</msg>
+<msg time="2025-02-19T11:14:22.677328" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\a\\RobotDonuts\\RobotDonuts\\reports\\browser\\traces\\temp\\e7718ac4-0a2a-4b80-b6f6-3d933aa769f0"}</msg>
+<msg time="2025-02-19T11:14:22.718750" level="INFO">Starting Browser process C:\hostedtoolcache\windows\Python\3.9.13\x64\lib\site-packages\Browser\wrapper\index.js using port 65325</msg>
+<msg time="2025-02-19T11:14:22.718750" level="INFO">Node startup parameters: ['node', 'C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64\\lib\\site-packages\\Browser\\wrapper\\index.js', '65325']</msg>
+<msg time="2025-02-19T11:14:23.991361" level="DEBUG">Connected to the playwright process at port 65325: body: "OK"
+</msg>
+<msg time="2025-02-19T11:14:25.198361" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\a\\RobotDonuts\\RobotDonuts\\reports\\browser\\traces\\temp\\e7718ac4-0a2a-4b80-b6f6-3d933aa769f0"}</msg>
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Return: 'browser=bea3a0fb-eecd-42cb-aa21-82ce91caf7f8'</msg>
+<msg time="2025-02-19T11:14:25.198361" level="INFO">${Browser Id} = browser=bea3a0fb-eecd-42cb-aa21-82ce91caf7f8</msg>
+<var>${Browser Id}</var>
+<arg>${browser}</arg>
+<arg>headless=${headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-02-19T11:14:22.676765" elapsed="2.521596"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Arguments: [ '${Browser Id}' ]</msg>
+<msg time="2025-02-19T11:14:25.198361" level="INFO">${Browser Id} = browser=bea3a0fb-eecd-42cb-aa21-82ce91caf7f8</msg>
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Return: None</msg>
+<arg>${Browser Id}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-02-19T11:14:25.198361" elapsed="0.000000"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Arguments: [ datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:25.198361" level="INFO">No context open.</msg>
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Return: '10 seconds'</msg>
+<arg>1m30s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-02-19T11:14:25.198361" elapsed="0.000000"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-02-19T11:14:25.198361" level="TRACE">Arguments: [ 'https://offbeatdonuts.com/order-now' ]</msg>
+<msg time="2025-02-19T11:14:31.375509" level="INFO">Successfully initialized new page object and opened url: https://offbeatdonuts.com/order-now</msg>
+<msg time="2025-02-19T11:14:31.376515" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-02-19T11:14:31.376515" level="DEBUG">Video is not enabled.</msg>
+<msg time="2025-02-19T11:14:31.376515" level="TRACE">Return: {'page_id': 'page=b50e051f-0009-47df-b60f-d8b759f22e6e', 'video_path': ''}</msg>
+<arg>${baseURL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-02-19T11:14:25.198361" elapsed="6.178154"/>
+</kw>
+<msg time="2025-02-19T11:14:31.376515" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:22.675084" elapsed="8.701431"/>
+</kw>
+<kw name="Reload" owner="Browser">
+<msg time="2025-02-19T11:14:31.377520" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-02-19T11:14:34.428853" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
+<msg time="2025-02-19T11:14:34.428853" level="TRACE">Return: None</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Reloads current active page.</doc>
+<status status="PASS" start="2025-02-19T11:14:31.377520" elapsed="3.051333"/>
+</kw>
+<kw name="Accept the cookies" owner="HomePageKeywords">
+<msg time="2025-02-19T11:14:34.429747" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:34.429747" level="TRACE">Arguments: [ ${locator}='id=cookiescript_accept' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:14:34.430746" level="TRACE">Arguments: [ 'id=cookiescript_accept' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:34.491409" level="INFO">Waited for Element with selector id=cookiescript_accept at state visible</msg>
+<msg time="2025-02-19T11:14:34.492411" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.430746" elapsed="0.061665"/>
+</kw>
+<msg time="2025-02-19T11:14:34.492411" level="TRACE">Return: None</msg>
+<arg>${cookies}</arg>
+<status status="PASS" start="2025-02-19T11:14:34.429747" elapsed="0.062664"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:34.493408" level="TRACE">Arguments: [ ${Element Locator}='//div[@data-testid="POPUP"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:34.498017" level="TRACE">Arguments: [ '//div[@data-testid="POPUP"]' ]</msg>
+<msg time="2025-02-19T11:14:34.506024" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:14:34.506024" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.494409" elapsed="0.011615"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:34.507018" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:34.507018" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:14:34.507018" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.507018" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:34.508016" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:34.508016" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:14:34.508016" level="INFO">${is_Present} = False</msg>
+<var>${is_Present}</var>
+<arg>${coupon}</arg>
+<status status="PASS" start="2025-02-19T11:14:34.493408" elapsed="0.014608"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:34.508016" level="TRACE">Arguments: [ 'False == True' | 'Click' | '${no_thanks_btn}' ]</msg>
+<msg time="2025-02-19T11:14:34.509019" level="TRACE">Return: None</msg>
+<arg>${is_Present} == True</arg>
+<arg>Click</arg>
+<arg>${no_thanks_btn}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.508016" elapsed="0.001003"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:34.509019" level="TRACE">Arguments: [ 'id=cookiescript_accept' ]</msg>
+<msg time="2025-02-19T11:14:34.509019" level="INFO">Clicks the element 'id=cookiescript_accept'.</msg>
+<msg time="2025-02-19T11:14:34.510017" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:34.668068" level="DEBUG">Clicked element: 'id=cookiescript_accept' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:34.668068" level="TRACE">Return: None</msg>
+<arg>${cookies}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.509019" elapsed="0.159049"/>
+</kw>
+<msg time="2025-02-19T11:14:34.668068" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:34.428853" elapsed="0.239215"/>
+</kw>
+<doc>Opens the browser and navigates to the homepage</doc>
+<status status="PASS" start="2025-02-19T11:14:22.673947" elapsed="11.994121"/>
+</test>
+<doc>Navigate to the homepage</doc>
+<status status="PASS" start="2025-02-19T11:14:22.490426" elapsed="12.177642"/>
+</suite>
+<status status="PASS" start="2025-02-19T11:14:22.488673" elapsed="12.190302"/>
+</suite>
+<suite id="s1-s2" name="002 Order Now Tests" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\002_Order_Now_Tests">
+<suite id="s1-s2-s1" name="001 Order Scenarios" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\002_Order_Now_Tests\001_Order_Scenarios.robot">
+<test id="s1-s2-s1-t1" name="Customer is on a budget and orders lowest value donuts" line="11">
+<kw name="Select the Order Now Button" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:34.700659" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:34.701238" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:14:34.701767" level="INFO">Clicks the element '//*[@id="main-menu"]//a[text()="order now"]'.</msg>
+<msg time="2025-02-19T11:14:34.703084" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:37.531770" level="DEBUG">Clicked element: '//*[@id="main-menu"]//a[text()="order now"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:37.531770" level="TRACE">Return: None</msg>
+<arg>${Order_Now_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:34.700659" elapsed="2.831708"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:37.532888" level="TRACE">Arguments: [ ${locator}='//h3[text()="ORDER DONUTS IN JUST 4 STEPS-"]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:14:37.533913" level="TRACE">Arguments: [ '//h3[text()="ORDER DONUTS IN JUST 4 STEPS-"]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:37.718080" level="INFO">Waited for Element with selector //h3[text()="ORDER DONUTS IN JUST 4 STEPS-"] at state visible</msg>
+<msg time="2025-02-19T11:14:37.720420" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:14:37.533913" elapsed="0.186507"/>
+</kw>
+<msg time="2025-02-19T11:14:37.720420" level="TRACE">Return: None</msg>
+<arg>${Order_Now_Heading}</arg>
+<status status="PASS" start="2025-02-19T11:14:37.532888" elapsed="0.187532"/>
+</kw>
+<msg time="2025-02-19T11:14:37.720420" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:34.700076" elapsed="3.020344"/>
+</kw>
+<kw name="Select the donuts from the Offbeat Range and verify the quantity is one box" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:37.721930" level="TRACE">Arguments: [ ${Donut_Name}='Classic Glazed Dozen' | ${Donut_Range}='Offbeat Dozen' ]</msg>
+<kw name="Select the donut range" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:37.724119" level="TRACE">Arguments: [ ${Range}='Offbeat Dozen' ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:14:37.726109" level="TRACE">Arguments: [ 'id=top_boxes' ]</msg>
+<msg time="2025-02-19T11:14:38.050391" level="DEBUG">Scrolled to id=top_boxes field if needed.</msg>
+<msg time="2025-02-19T11:14:38.050513" level="TRACE">Return: None</msg>
+<arg>id=top_boxes</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:14:37.724119" elapsed="0.326394"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:38.051757" level="TRACE">Arguments: [ ${Element Locator}='//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:38.053007" level="TRACE">Arguments: [ '//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<msg time="2025-02-19T11:14:38.057974" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:38.058983" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.052281" elapsed="0.006702"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:38.058983" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:38.059982" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:38.059982" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.058983" elapsed="0.000999"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:38.059982" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:38.059982" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:38.060984" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//a[contains(text(),"${Range}")][@class="active"]</arg>
+<status status="PASS" start="2025-02-19T11:14:38.051110" elapsed="0.009874"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:38.060984" level="TRACE">Arguments: [ 'True == False' | 'Click' | '//a[contains(text(),"${Range}")]' ]</msg>
+<msg time="2025-02-19T11:14:38.060984" level="TRACE">Return: None</msg>
+<arg>${isPresent} == False</arg>
+<arg>Click</arg>
+<arg>//a[contains(text(),"${Range}")]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.060984" elapsed="0.000000"/>
+</kw>
+<msg time="2025-02-19T11:14:38.061985" level="TRACE">Return: None</msg>
+<arg>${Donut_Range}</arg>
+<status status="PASS" start="2025-02-19T11:14:37.722544" elapsed="0.339441"/>
+</kw>
+<kw name="Select the donut by name" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.062962" level="TRACE">Arguments: [ ${Name}='Classic Glazed Dozen' ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:38.064189" level="TRACE">Arguments: [ ${Element Locator}='//h3[text()="Classic Glazed Dozen"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:38.064717" level="TRACE">Arguments: [ '//h3[text()="Classic Glazed Dozen"]' ]</msg>
+<msg time="2025-02-19T11:14:38.076539" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:38.076539" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.064717" elapsed="0.011822"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:38.077548" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:38.077548" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:38.078550" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.077548" elapsed="0.001002"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:38.078550" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:38.078550" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:38.078550" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//h3[text()="${Name}"]</arg>
+<status status="PASS" start="2025-02-19T11:14:38.063579" elapsed="0.015969"/>
+</kw>
+<while condition="${isPresent} == False">
+<iter>
+<kw name="Click" owner="Browser">
+<arg>//*[contains(@class,"next_offbeat-dozen")]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-02-19T11:14:38.079548" elapsed="0.000998"/>
+</kw>
+<status status="NOT RUN" start="2025-02-19T11:14:38.079548" elapsed="0.000998"/>
+</iter>
+<status status="NOT RUN" start="2025-02-19T11:14:38.079548" elapsed="0.000998"/>
+</while>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:38.081546" level="TRACE">Arguments: [ '//h3[text()="Classic Glazed Dozen"]//parent::div//*[text()="Select Box"]' ]</msg>
+<msg time="2025-02-19T11:14:38.081546" level="INFO">Clicks the element '//h3[text()="Classic Glazed Dozen"]//parent::div//*[text()="Select Box"]'.</msg>
+<msg time="2025-02-19T11:14:38.082559" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:38.221754" level="DEBUG">Clicked element: '//h3[text()="Classic Glazed Dozen"]//parent::div//*[text()="Select Box"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:38.221754" level="TRACE">Return: None</msg>
+<arg>//h3[text()="${Name}"]${Select_Box_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.080546" elapsed="0.142210"/>
+</kw>
+<msg time="2025-02-19T11:14:38.222756" level="TRACE">Return: None</msg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:14:38.062317" elapsed="0.160439"/>
+</kw>
+<kw name="Verify the button number has changed" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.223761" level="TRACE">Arguments: [ ${Number}='1' | ${Donut_name}='Classic Glazed Dozen' ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:38.224751" level="TRACE">Arguments: [ '//h3[text() ="Classic Glazed Dozen"]//following-sibling::div[@class="qty"]/span' | &lt;AssertionOperator.equal: '=='&gt; | '1' ]</msg>
+<msg time="2025-02-19T11:14:38.252241" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:38.252241" level="INFO">Text: '1'</msg>
+<msg time="2025-02-19T11:14:38.252241" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.027489662170410156 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:38.252241" level="TRACE">Return: '1'</msg>
+<arg>//h3[text() ="${Donut_name}"]${Box_Quantity}</arg>
+<arg>==</arg>
+<arg>${Number}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.223761" elapsed="0.028480"/>
+</kw>
+<msg time="2025-02-19T11:14:38.253237" level="TRACE">Return: None</msg>
+<arg>1</arg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:14:38.222756" elapsed="0.030481"/>
+</kw>
+<msg time="2025-02-19T11:14:38.253237" level="TRACE">Return: None</msg>
+<arg>Classic Glazed Dozen</arg>
+<arg>Offbeat Dozen</arg>
+<status status="PASS" start="2025-02-19T11:14:37.721429" elapsed="0.531808"/>
+</kw>
+<kw name="Go to fill your boxes section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.253237" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:38.254233" level="TRACE">Arguments: [ '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:14:38.254233" level="INFO">Clicks the element '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:14:38.255232" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:38.321737" level="DEBUG">Clicked element: '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:38.321737" level="TRACE">Return: None</msg>
+<arg>${Section_1}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.254233" elapsed="0.067504"/>
+</kw>
+<msg time="2025-02-19T11:14:38.321737" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:38.253237" elapsed="0.068500"/>
+</kw>
+<kw name="Verify Information Box for the Economy order is as expected" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.323323" level="TRACE">Arguments: [  ]</msg>
+<kw name="Verify Box information text is as Expected" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.324342" level="TRACE">Arguments: [ ${strings}='Classic Glazed Dozen\nBox status: 12 / 12\nRemove box' ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:38.325451" level="TRACE">Arguments: [ "(//div[@class='info'])[1]" | &lt;AssertionOperator.equal: '=='&gt; | 'Classic Glazed Dozen\nBox status: 12 / 12\nRemove box' ]</msg>
+<msg time="2025-02-19T11:14:38.344622" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:38.345187" level="INFO">Text: 'Classic Glazed Dozen\nBox status: 12 / 12\nRemove box'</msg>
+<msg time="2025-02-19T11:14:38.345187" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.019687652587890625 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:38.345187" level="TRACE">Return: 'Classic Glazed Dozen\nBox status: 12 / 12\nRemove box'</msg>
+<arg>(//div[@class='info'])[1]</arg>
+<arg>==</arg>
+<arg>${strings}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.324342" elapsed="0.020845"/>
+</kw>
+<msg time="2025-02-19T11:14:38.345187" level="TRACE">Return: None</msg>
+<arg>${Classic_Glazed_Dozen_Box_Info}</arg>
+<status status="PASS" start="2025-02-19T11:14:38.323323" elapsed="0.022416"/>
+</kw>
+<msg time="2025-02-19T11:14:38.345739" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:38.322900" elapsed="0.022839"/>
+</kw>
+<kw name="Go to add some magic section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:38.346289" level="TRACE">Arguments: [  ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:14:38.347400" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:14:39.264833" level="DEBUG">Scrolled to //div[@id="customiser"]//following-sibling::div[@class="next_step"] field if needed.</msg>
+<msg time="2025-02-19T11:14:39.265431" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:14:38.346851" elapsed="0.918618"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:39.266732" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:14:39.266732" level="INFO">Clicks the element '//div[@id="customiser"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:14:39.267360" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:39.304346" level="DEBUG">Clicked element: '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:39.304346" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:39.265469" elapsed="0.038877"/>
+</kw>
+<msg time="2025-02-19T11:14:39.304915" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:38.346289" elapsed="0.958626"/>
+</kw>
+<kw name="Go to add to cart section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:39.305467" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:39.306548" level="TRACE">Arguments: [ '//*[@id="extra_tabs"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:14:39.306548" level="INFO">Clicks the element '//*[@id="extra_tabs"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:14:39.307098" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:40.209470" level="DEBUG">Clicked element: '//*[@id="extra_tabs"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:40.209470" level="TRACE">Return: None</msg>
+<arg>${Section_3}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:39.306008" elapsed="0.904078"/>
+</kw>
+<msg time="2025-02-19T11:14:40.210211" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:39.304915" elapsed="0.905296"/>
+</kw>
+<kw name="Get the total on the Order Now Page" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:40.211280" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:40.212304" level="TRACE">Arguments: [ '//div[@id="bar"]//div[@class="sub_price"]/span' ]</msg>
+<msg time="2025-02-19T11:14:40.228389" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:40.228389" level="INFO">Text: '19.00'</msg>
+<msg time="2025-02-19T11:14:40.228389" level="TRACE">Return: '19.00'</msg>
+<msg time="2025-02-19T11:14:40.229021" level="INFO">${OrderNowTotal} = 19.00</msg>
+<var>${OrderNowTotal}</var>
+<arg>${Sub_Total_Order_Now}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:40.211546" elapsed="0.017475"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:14:40.229652" level="TRACE">Arguments: [ '${OrderNowTotal}' ]</msg>
+<msg time="2025-02-19T11:14:40.229652" level="INFO">${OrderNowTotal} = 19.00</msg>
+<msg time="2025-02-19T11:14:40.229652" level="TRACE">Return: None</msg>
+<arg>${OrderNowTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:14:40.229021" elapsed="0.000631"/>
+</kw>
+<msg time="2025-02-19T11:14:40.230303" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:40.210211" elapsed="0.020092"/>
+</kw>
+<kw name="Select Add to Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:40.231051" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:40.231440" level="TRACE">Arguments: [ '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' ]</msg>
+<msg time="2025-02-19T11:14:40.232212" level="INFO">Clicks the element '//div[@id="bar"]//button[contains(text(),"Add to Cart")]'.</msg>
+<msg time="2025-02-19T11:14:40.232778" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:41.152281" level="DEBUG">Clicked element: '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:41.152619" level="TRACE">Return: None</msg>
+<arg>${Add_to_Cart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:40.231320" elapsed="0.921299"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:41.154138" level="TRACE">Arguments: [ ${locator}='//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:14:41.155379" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:42.472848" level="INFO">Waited for Element with selector //div[@class="modal-content"]//a[contains(text(),"View Cart")] at state visible</msg>
+<msg time="2025-02-19T11:14:42.472848" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:14:41.154706" elapsed="1.318142"/>
+</kw>
+<msg time="2025-02-19T11:14:42.472848" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<status status="PASS" start="2025-02-19T11:14:41.153566" elapsed="1.319282"/>
+</kw>
+<msg time="2025-02-19T11:14:42.472848" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:40.230303" elapsed="2.242545"/>
+</kw>
+<kw name="Verify Cart pop up information is as Expected" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:42.473856" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:42.474857" level="TRACE">Arguments: [ "(//div[@class='modal-body'])[3]" | &lt;AssertionOperator.equal: '=='&gt; | 'Your box was added to cart\nVIEW CART\nStart another box' ]</msg>
+<msg time="2025-02-19T11:14:42.491534" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:42.491534" level="INFO">Text: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<msg time="2025-02-19T11:14:42.491534" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.016677141189575195 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:42.491534" level="TRACE">Return: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<arg>(//div[@class='modal-body'])[3]</arg>
+<arg>==</arg>
+<arg>${Cart_PopUp}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:42.473856" elapsed="0.017678"/>
+</kw>
+<msg time="2025-02-19T11:14:42.491534" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:42.473856" elapsed="0.017678"/>
+</kw>
+<kw name="Select View the cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:42.492531" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:42.492531" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<msg time="2025-02-19T11:14:42.493530" level="INFO">Clicks the element '//div[@class="modal-content"]//a[contains(text(),"View Cart")]'.</msg>
+<msg time="2025-02-19T11:14:42.493530" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:43.850383" level="DEBUG">Clicked element: '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:43.850975" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:42.492531" elapsed="1.358486"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:43.851643" level="TRACE">Arguments: [ ${locator}="//h1[@class='entry-title']" ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:14:43.852896" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:44.148540" level="INFO">Waited for Element with selector //h1[@class='entry-title'] at state visible</msg>
+<msg time="2025-02-19T11:14:44.149540" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:14:43.852227" elapsed="0.297313"/>
+</kw>
+<msg time="2025-02-19T11:14:44.149540" level="TRACE">Return: None</msg>
+<arg>//h1[@class='entry-title']</arg>
+<status status="PASS" start="2025-02-19T11:14:43.851017" elapsed="0.298523"/>
+</kw>
+<msg time="2025-02-19T11:14:44.149540" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:42.491534" elapsed="1.658006"/>
+</kw>
+<kw name="Verify Cart contains the items I have ordered for the economy scenario" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:44.151412" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:44.153147" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;AssertionOperator.equal: '=='&gt; | 'my cart (1 items)' ]</msg>
+<msg time="2025-02-19T11:14:44.359822" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:44.360831" level="INFO">Text: 'my cart (1 items)'</msg>
+<msg time="2025-02-19T11:14:44.360831" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.20768356323242188 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:44.360831" level="TRACE">Return: 'my cart (1 items)'</msg>
+<arg>//h1[@class='entry-title']</arg>
+<arg>==</arg>
+<arg>${Cart_Title}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.151412" elapsed="0.209419"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:44.362817" level="TRACE">Arguments: [ "//td[@class='product-name']" | &lt;AssertionOperator.equal: '=='&gt; | 'Classic Glazed Dozen\nRemove' ]</msg>
+<msg time="2025-02-19T11:14:44.394375" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:44.395384" level="INFO">Text: 'Classic Glazed Dozen\nRemove'</msg>
+<msg time="2025-02-19T11:14:44.395384" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.03256678581237793 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:44.395384" level="TRACE">Return: 'Classic Glazed Dozen\nRemove'</msg>
+<arg>//td[@class='product-name']</arg>
+<arg>==</arg>
+<arg>${Economy_Cart}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.360831" elapsed="0.034553"/>
+</kw>
+<msg time="2025-02-19T11:14:44.395384" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:44.150545" elapsed="0.244839"/>
+</kw>
+<kw name="Get the total in the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:44.396384" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:44.398377" level="TRACE">Arguments: [ '//tr[@class="cart-subtotal"]//bdi[1]' ]</msg>
+<msg time="2025-02-19T11:14:44.415702" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:44.415702" level="INFO">Text: '€19.00'</msg>
+<msg time="2025-02-19T11:14:44.415702" level="TRACE">Return: '€19.00'</msg>
+<msg time="2025-02-19T11:14:44.415702" level="INFO">${CartTotal} = €19.00</msg>
+<var>${CartTotal}</var>
+<arg>//tr[@class="cart-subtotal"]//bdi[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.397385" elapsed="0.018317"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:14:44.416860" level="TRACE">Arguments: [ '${CartTotal}' ]</msg>
+<msg time="2025-02-19T11:14:44.417863" level="INFO">${CartTotal} = €19.00</msg>
+<msg time="2025-02-19T11:14:44.417863" level="TRACE">Return: None</msg>
+<arg>${CartTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.416860" elapsed="0.001003"/>
+</kw>
+<msg time="2025-02-19T11:14:44.417863" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:44.396384" elapsed="0.021479"/>
+</kw>
+<kw name="Verify the total on the Order Now Page is the same as the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:44.418867" level="TRACE">Arguments: [  ]</msg>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:44.419859" level="TRACE">Arguments: [ '€19.00' ]</msg>
+<msg time="2025-02-19T11:14:44.419859" level="TRACE">Return: '€19.00'</msg>
+<msg time="2025-02-19T11:14:44.420792" level="INFO">${Add_Euro_to_OrderNowTotal} = €19.00</msg>
+<var>${Add_Euro_to_OrderNowTotal}</var>
+<arg>€${OrderNowTotal}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.419859" elapsed="0.001001"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-02-19T11:14:44.420860" level="TRACE">Arguments: [ '€19.00' | '€19.00' ]</msg>
+<msg time="2025-02-19T11:14:44.421864" level="DEBUG">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'str'&gt;</msg>
+<msg time="2025-02-19T11:14:44.421864" level="TRACE">Return: None</msg>
+<arg>${Add_Euro_to_OrderNowTotal}</arg>
+<arg>${CartTotal}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.420860" elapsed="0.001004"/>
+</kw>
+<msg time="2025-02-19T11:14:44.421864" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:44.417863" elapsed="0.004001"/>
+</kw>
+<kw name="Empty the Cart at the end of the test" owner="CartKeywords" type="TEARDOWN">
+<msg time="2025-02-19T11:14:44.422868" level="TRACE">Arguments: [  ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:44.422868" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:44.423864" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:14:44.428860" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:14:44.428860" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.423864" elapsed="0.004996"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:44.428860" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:44.429858" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:14:44.429858" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.428860" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:44.429858" elapsed="0.001012"/>
+</return>
+<msg time="2025-02-19T11:14:44.430870" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:14:44.430870" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:14:44.422868" elapsed="0.008002"/>
+</kw>
+<while condition="${is_Cart_Empty} != True">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:44.432862" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:14:44.433645" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:14:44.435009" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:44.544281" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:44.544281" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.431862" elapsed="0.112419"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:44.546288" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:14:44.548284" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:14:47.378820" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:14:47.379382" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:14:44.547292" elapsed="2.832090"/>
+</kw>
+<msg time="2025-02-19T11:14:47.379899" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:14:44.545285" elapsed="2.834648"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:47.380482" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:47.381580" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:14:47.386384" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:47.386900" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.381031" elapsed="0.005869"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:47.387931" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:47.388030" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:47.388030" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.386900" elapsed="0.001130"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:47.388030" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:47.388030" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:47.388030" level="INFO">${is_Cart_Empty} = True</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:14:47.379933" elapsed="0.008097"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:44.430870" elapsed="2.957160"/>
+</iter>
+<status status="PASS" start="2025-02-19T11:14:44.430870" elapsed="2.957160"/>
+</while>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:47.388030" level="TRACE">Arguments: [ ${Element Locator}='//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:47.388030" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:14:47.393542" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:47.393542" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.388030" elapsed="0.005512"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:47.394551" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:47.394551" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:47.394551" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.393542" elapsed="0.001009"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:47.394551" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:47.394551" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:47.394551" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>${Order_Now_Button}</arg>
+<status status="PASS" start="2025-02-19T11:14:47.388030" elapsed="0.006521"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:47.395762" level="TRACE">Arguments: [ 'True == True' | 'Click' | '${Order_Now_Button}' ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:47.396399" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:14:47.396399" level="INFO">Clicks the element '//*[@id="main-menu"]//a[text()="order now"]'.</msg>
+<msg time="2025-02-19T11:14:47.397663" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:49.408605" level="DEBUG">Clicked element: '//*[@id="main-menu"]//a[text()="order now"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:49.408605" level="TRACE">Return: None</msg>
+<arg>${Order_Now_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.395762" elapsed="2.013838"/>
+</kw>
+<msg time="2025-02-19T11:14:49.409600" level="TRACE">Return: None</msg>
+<arg>${isPresent} == True</arg>
+<arg>Click</arg>
+<arg>${Order_Now_Button}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:14:47.395551" elapsed="2.014049"/>
+</kw>
+<msg time="2025-02-19T11:14:49.409600" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:44.421864" elapsed="4.987736"/>
+</kw>
+<msg time="2025-02-19T11:14:49.413606" level="INFO">Set timeout to: 10000</msg>
+<doc>Verify the donuts ordered are added to the cart</doc>
+<status status="PASS" start="2025-02-19T11:14:34.698305" elapsed="14.711295"/>
+</test>
+<test id="s1-s2-s1-t2" name="Customer is hungry" line="28">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:49.415596" level="TRACE">Arguments: [ '3s' ]</msg>
+<msg time="2025-02-19T11:14:52.416275" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-19T11:14:52.416275" level="TRACE">Return: None</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:49.414605" elapsed="3.001670"/>
+</kw>
+<kw name="Select the donuts from the Offbeat Range and verify the quantity is one box" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.417401" level="TRACE">Arguments: [ ${Donut_Name}='Offbeat Dozen' | ${Donut_Range}='Offbeat Dozen' ]</msg>
+<kw name="Select the donut range" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.417946" level="TRACE">Arguments: [ ${Range}='Offbeat Dozen' ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:14:52.419028" level="TRACE">Arguments: [ 'id=top_boxes' ]</msg>
+<msg time="2025-02-19T11:14:52.466909" level="DEBUG">Scrolled to id=top_boxes field if needed.</msg>
+<msg time="2025-02-19T11:14:52.466909" level="TRACE">Return: None</msg>
+<arg>id=top_boxes</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.418487" elapsed="0.048422"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:52.467903" level="TRACE">Arguments: [ ${Element Locator}='//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:52.469340" level="TRACE">Arguments: [ '//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<msg time="2025-02-19T11:14:52.472995" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:52.473562" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.467903" elapsed="0.005659"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:52.474183" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:52.474183" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:52.474183" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.473562" elapsed="0.000621"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:52.474786" elapsed="0.000058"/>
+</return>
+<msg time="2025-02-19T11:14:52.475368" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:52.475368" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//a[contains(text(),"${Range}")][@class="active"]</arg>
+<status status="PASS" start="2025-02-19T11:14:52.467903" elapsed="0.007947"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:52.476513" level="TRACE">Arguments: [ 'True == False' | 'Click' | '//a[contains(text(),"${Range}")]' ]</msg>
+<msg time="2025-02-19T11:14:52.476630" level="TRACE">Return: None</msg>
+<arg>${isPresent} == False</arg>
+<arg>Click</arg>
+<arg>//a[contains(text(),"${Range}")]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.475850" elapsed="0.000897"/>
+</kw>
+<msg time="2025-02-19T11:14:52.476867" level="TRACE">Return: None</msg>
+<arg>${Donut_Range}</arg>
+<status status="PASS" start="2025-02-19T11:14:52.417946" elapsed="0.058921"/>
+</kw>
+<kw name="Select the donut by name" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.477422" level="TRACE">Arguments: [ ${Name}='Offbeat Dozen' ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:14:52.477973" level="TRACE">Arguments: [ ${Element Locator}='//h3[text()="Offbeat Dozen"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:14:52.478522" level="TRACE">Arguments: [ '//h3[text()="Offbeat Dozen"]' ]</msg>
+<msg time="2025-02-19T11:14:52.483379" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:52.483379" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.477973" elapsed="0.005406"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:14:52.484380" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:14:52.484380" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:52.484380" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.484380" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:14:52.484380" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:14:52.484380" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:14:52.485380" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//h3[text()="${Name}"]</arg>
+<status status="PASS" start="2025-02-19T11:14:52.477422" elapsed="0.007958"/>
+</kw>
+<while condition="${isPresent} == False">
+<iter>
+<kw name="Click" owner="Browser">
+<arg>//*[contains(@class,"next_offbeat-dozen")]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-02-19T11:14:52.486470" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-02-19T11:14:52.485380" elapsed="0.001090"/>
+</iter>
+<status status="NOT RUN" start="2025-02-19T11:14:52.485380" elapsed="0.001090"/>
+</while>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:52.487637" level="TRACE">Arguments: [ '//h3[text()="Offbeat Dozen"]//parent::div//*[text()="Select Box"]' ]</msg>
+<msg time="2025-02-19T11:14:52.487637" level="INFO">Clicks the element '//h3[text()="Offbeat Dozen"]//parent::div//*[text()="Select Box"]'.</msg>
+<msg time="2025-02-19T11:14:52.488791" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:52.579445" level="DEBUG">Clicked element: '//h3[text()="Offbeat Dozen"]//parent::div//*[text()="Select Box"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:52.579445" level="TRACE">Return: None</msg>
+<arg>//h3[text()="${Name}"]${Select_Box_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.487055" elapsed="0.092390"/>
+</kw>
+<msg time="2025-02-19T11:14:52.579445" level="TRACE">Return: None</msg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:14:52.476867" elapsed="0.102578"/>
+</kw>
+<kw name="Verify the button number has changed" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.580476" level="TRACE">Arguments: [ ${Number}='1' | ${Donut_name}='Offbeat Dozen' ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:14:52.581474" level="TRACE">Arguments: [ '//h3[text() ="Offbeat Dozen"]//following-sibling::div[@class="qty"]/span' | &lt;AssertionOperator.equal: '=='&gt; | '1' ]</msg>
+<msg time="2025-02-19T11:14:52.600722" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:14:52.600831" level="INFO">Text: '1'</msg>
+<msg time="2025-02-19T11:14:52.600831" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.019356489181518555 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:14:52.600831" level="TRACE">Return: '1'</msg>
+<arg>//h3[text() ="${Donut_name}"]${Box_Quantity}</arg>
+<arg>==</arg>
+<arg>${Number}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.580476" elapsed="0.020355"/>
+</kw>
+<msg time="2025-02-19T11:14:52.600831" level="TRACE">Return: None</msg>
+<arg>1</arg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:14:52.579445" elapsed="0.021908"/>
+</kw>
+<msg time="2025-02-19T11:14:52.601550" level="TRACE">Return: None</msg>
+<arg>Offbeat Dozen</arg>
+<arg>Offbeat Dozen</arg>
+<status status="PASS" start="2025-02-19T11:14:52.417259" elapsed="0.184418"/>
+</kw>
+<kw name="Go to fill your boxes section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.602359" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:52.603550" level="TRACE">Arguments: [ '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:14:52.603550" level="INFO">Clicks the element '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:14:52.604855" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:52.651561" level="DEBUG">Clicked element: '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:52.651561" level="TRACE">Return: None</msg>
+<arg>${Section_1}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.602359" elapsed="0.049202"/>
+</kw>
+<msg time="2025-02-19T11:14:52.652339" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:52.602106" elapsed="0.050233"/>
+</kw>
+<kw name="Select 12 different donuts" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:14:52.653722" level="TRACE">Arguments: [  ]</msg>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:14:52.654306" level="TRACE">Arguments: [ '0' ]</msg>
+<msg time="2025-02-19T11:14:52.654306" level="TRACE">Return: '0'</msg>
+<msg time="2025-02-19T11:14:52.654306" level="INFO">${Count} = 0</msg>
+<var>${Count}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.653722" elapsed="0.000584"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:14:52.654921" level="TRACE">Arguments: [ '1' ]</msg>
+<msg time="2025-02-19T11:14:52.654921" level="TRACE">Return: '1'</msg>
+<msg time="2025-02-19T11:14:52.655483" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.654921" elapsed="0.000562"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:52.656662" level="TRACE">Arguments: [ "(//a[@class='box_clear'])[1]" ]</msg>
+<msg time="2025-02-19T11:14:52.656735" level="INFO">Clicks the element '(//a[@class='box_clear'])[1]'.</msg>
+<msg time="2025-02-19T11:14:52.657359" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:53.564434" level="DEBUG">Clicked element: '(//a[@class='box_clear'])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:53.564434" level="TRACE">Return: None</msg>
+<arg>(//a[@class='box_clear'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:52.655483" elapsed="0.908951"/>
+</kw>
+<while condition="${Count} != 12">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:53.566429" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[1]" ]</msg>
+<msg time="2025-02-19T11:14:53.566429" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[1]'.</msg>
+<msg time="2025-02-19T11:14:53.567800" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:53.629507" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:53.630127" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:53.565428" elapsed="0.064699"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:53.630474" level="TRACE">Arguments: [ '0 + 1' ]</msg>
+<msg time="2025-02-19T11:14:53.630474" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:14:53.630474" level="INFO">${Count} = 1</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:53.630474" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:53.630474" level="TRACE">Arguments: [ '1 + 1' ]</msg>
+<msg time="2025-02-19T11:14:53.630474" level="TRACE">Return: 2</msg>
+<msg time="2025-02-19T11:14:53.630474" level="INFO">${index} = 2</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:53.630474" elapsed="0.001572"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:53.632046" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:54.632647" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:54.632647" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:53.632046" elapsed="1.000601"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:53.565428" elapsed="1.067219"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:54.633648" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[2]" ]</msg>
+<msg time="2025-02-19T11:14:54.633648" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[2]'.</msg>
+<msg time="2025-02-19T11:14:54.634647" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:54.688637" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[2]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:54.689798" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:54.633648" elapsed="0.056150"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:54.690795" level="TRACE">Arguments: [ '1 + 1' ]</msg>
+<msg time="2025-02-19T11:14:54.690795" level="TRACE">Return: 2</msg>
+<msg time="2025-02-19T11:14:54.690795" level="INFO">${Count} = 2</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:54.689798" elapsed="0.000997"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:54.690795" level="TRACE">Arguments: [ '2 + 1' ]</msg>
+<msg time="2025-02-19T11:14:54.690795" level="TRACE">Return: 3</msg>
+<msg time="2025-02-19T11:14:54.690795" level="INFO">${index} = 3</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:54.690795" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:54.691793" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:55.693013" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:55.693316" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:54.691793" elapsed="1.001616"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:54.632647" elapsed="1.060762"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:55.695033" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[3]" ]</msg>
+<msg time="2025-02-19T11:14:55.695033" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[3]'.</msg>
+<msg time="2025-02-19T11:14:55.696294" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:55.754828" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[3]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:55.754828" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:55.693995" elapsed="0.060833"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:55.756231" level="TRACE">Arguments: [ '2 + 1' ]</msg>
+<msg time="2025-02-19T11:14:55.756231" level="TRACE">Return: 3</msg>
+<msg time="2025-02-19T11:14:55.756231" level="INFO">${Count} = 3</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:55.754828" elapsed="0.001403"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:55.756231" level="TRACE">Arguments: [ '3 + 1' ]</msg>
+<msg time="2025-02-19T11:14:55.757260" level="TRACE">Return: 4</msg>
+<msg time="2025-02-19T11:14:55.757260" level="INFO">${index} = 4</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:55.756231" elapsed="0.001029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:55.757260" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:56.758185" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:56.758185" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:55.757260" elapsed="1.001383"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:55.693409" elapsed="1.065421"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:56.760675" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[4]" ]</msg>
+<msg time="2025-02-19T11:14:56.761140" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[4]'.</msg>
+<msg time="2025-02-19T11:14:56.762892" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:56.819066" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[4]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:56.819977" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:56.759828" elapsed="0.060149"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:56.820551" level="TRACE">Arguments: [ '3 + 1' ]</msg>
+<msg time="2025-02-19T11:14:56.821369" level="TRACE">Return: 4</msg>
+<msg time="2025-02-19T11:14:56.821369" level="INFO">${Count} = 4</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:56.820497" elapsed="0.000872"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:56.821993" level="TRACE">Arguments: [ '4 + 1' ]</msg>
+<msg time="2025-02-19T11:14:56.821993" level="TRACE">Return: 5</msg>
+<msg time="2025-02-19T11:14:56.821993" level="INFO">${index} = 5</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:56.821369" elapsed="0.000624"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:56.821993" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:57.822007" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:57.822007" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:56.821993" elapsed="1.000014"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:56.758830" elapsed="1.063177"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:57.824006" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[5]" ]</msg>
+<msg time="2025-02-19T11:14:57.824143" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[5]'.</msg>
+<msg time="2025-02-19T11:14:57.824685" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:57.875595" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[5]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:57.875595" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:57.823090" elapsed="0.052505"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:57.876941" level="TRACE">Arguments: [ '4 + 1' ]</msg>
+<msg time="2025-02-19T11:14:57.876941" level="TRACE">Return: 5</msg>
+<msg time="2025-02-19T11:14:57.876941" level="INFO">${Count} = 5</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:57.876231" elapsed="0.000710"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:57.877496" level="TRACE">Arguments: [ '5 + 1' ]</msg>
+<msg time="2025-02-19T11:14:57.877496" level="TRACE">Return: 6</msg>
+<msg time="2025-02-19T11:14:57.877496" level="INFO">${index} = 6</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:57.877496" elapsed="0.000517"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:57.878047" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:58.878719" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:58.878719" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:57.878047" elapsed="1.000672"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:57.822007" elapsed="1.056712"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:58.880377" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[6]" ]</msg>
+<msg time="2025-02-19T11:14:58.880377" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[6]'.</msg>
+<msg time="2025-02-19T11:14:58.881477" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:14:58.941541" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[6]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:14:58.941541" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:58.879827" elapsed="0.061714"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:58.942699" level="TRACE">Arguments: [ '5 + 1' ]</msg>
+<msg time="2025-02-19T11:14:58.942699" level="TRACE">Return: 6</msg>
+<msg time="2025-02-19T11:14:58.942699" level="INFO">${Count} = 6</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:58.942699" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:14:58.943695" level="TRACE">Arguments: [ '6 + 1' ]</msg>
+<msg time="2025-02-19T11:14:58.943920" level="TRACE">Return: 7</msg>
+<msg time="2025-02-19T11:14:58.943920" level="INFO">${index} = 7</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:14:58.942699" elapsed="0.001221"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:14:58.943920" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:14:59.946095" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:14:59.946095" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:14:58.943920" elapsed="1.002175"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:58.879277" elapsed="1.066818"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:14:59.948109" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[7]" ]</msg>
+<msg time="2025-02-19T11:14:59.948109" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[7]'.</msg>
+<msg time="2025-02-19T11:14:59.949513" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:00.012820" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[7]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:00.012820" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:14:59.947107" elapsed="0.065713"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:00.017430" level="TRACE">Arguments: [ '6 + 1' ]</msg>
+<msg time="2025-02-19T11:15:00.017430" level="TRACE">Return: 7</msg>
+<msg time="2025-02-19T11:15:00.017430" level="INFO">${Count} = 7</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:00.013804" elapsed="0.003626"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:00.018808" level="TRACE">Arguments: [ '7 + 1' ]</msg>
+<msg time="2025-02-19T11:15:00.018808" level="TRACE">Return: 8</msg>
+<msg time="2025-02-19T11:15:00.018808" level="INFO">${index} = 8</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:00.017430" elapsed="0.001378"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:00.019417" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:01.020200" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:01.020200" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:00.019334" elapsed="1.000866"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:14:59.946095" elapsed="1.074105"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:01.021216" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[8]" ]</msg>
+<msg time="2025-02-19T11:15:01.021216" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[8]'.</msg>
+<msg time="2025-02-19T11:15:01.022217" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:01.080586" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[8]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:01.081157" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:01.021216" elapsed="0.059941"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:01.082239" level="TRACE">Arguments: [ '7 + 1' ]</msg>
+<msg time="2025-02-19T11:15:01.082454" level="TRACE">Return: 8</msg>
+<msg time="2025-02-19T11:15:01.082454" level="INFO">${Count} = 8</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:01.081157" elapsed="0.001297"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:01.083151" level="TRACE">Arguments: [ '8 + 1' ]</msg>
+<msg time="2025-02-19T11:15:01.083306" level="TRACE">Return: 9</msg>
+<msg time="2025-02-19T11:15:01.083463" level="INFO">${index} = 9</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:01.082454" elapsed="0.001061"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:01.083838" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:02.085232" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:02.085232" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:01.083838" elapsed="1.001394"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:01.020200" elapsed="1.065032"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:02.086242" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[9]" ]</msg>
+<msg time="2025-02-19T11:15:02.087243" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[9]'.</msg>
+<msg time="2025-02-19T11:15:02.087243" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:02.145801" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[9]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:02.147073" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:02.086242" elapsed="0.061103"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:02.147919" level="TRACE">Arguments: [ '8 + 1' ]</msg>
+<msg time="2025-02-19T11:15:02.147919" level="TRACE">Return: 9</msg>
+<msg time="2025-02-19T11:15:02.148436" level="INFO">${Count} = 9</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:02.147345" elapsed="0.001143"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:02.148838" level="TRACE">Arguments: [ '9 + 1' ]</msg>
+<msg time="2025-02-19T11:15:02.148838" level="TRACE">Return: 10</msg>
+<msg time="2025-02-19T11:15:02.148838" level="INFO">${index} = 10</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:02.148488" elapsed="0.000350"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:02.149387" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:03.150511" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:03.150511" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:02.149387" elapsed="1.001124"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:02.085232" elapsed="1.065279"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:03.152791" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[10]" ]</msg>
+<msg time="2025-02-19T11:15:03.152791" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[10]'.</msg>
+<msg time="2025-02-19T11:15:03.154043" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:03.236575" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[10]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:03.236575" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:03.151523" elapsed="0.086057"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:03.238579" level="TRACE">Arguments: [ '9 + 1' ]</msg>
+<msg time="2025-02-19T11:15:03.238579" level="TRACE">Return: 10</msg>
+<msg time="2025-02-19T11:15:03.238579" level="INFO">${Count} = 10</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:03.238074" elapsed="0.000505"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:03.239580" level="TRACE">Arguments: [ '10 + 1' ]</msg>
+<msg time="2025-02-19T11:15:03.239580" level="TRACE">Return: 11</msg>
+<msg time="2025-02-19T11:15:03.239580" level="INFO">${index} = 11</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:03.238579" elapsed="0.001001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:03.240580" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:04.241459" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:04.241459" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:03.239580" elapsed="1.001879"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:03.150511" elapsed="1.091554"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:04.243768" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[11]" ]</msg>
+<msg time="2025-02-19T11:15:04.243822" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[11]'.</msg>
+<msg time="2025-02-19T11:15:04.244945" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:04.297980" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[11]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:04.298519" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:04.242712" elapsed="0.055857"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:04.299148" level="TRACE">Arguments: [ '10 + 1' ]</msg>
+<msg time="2025-02-19T11:15:04.299730" level="TRACE">Return: 11</msg>
+<msg time="2025-02-19T11:15:04.299730" level="INFO">${Count} = 11</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:04.299148" elapsed="0.000582"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:04.300310" level="TRACE">Arguments: [ '11 + 1' ]</msg>
+<msg time="2025-02-19T11:15:04.300310" level="TRACE">Return: 12</msg>
+<msg time="2025-02-19T11:15:04.300843" level="INFO">${index} = 12</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:04.300310" elapsed="0.000581"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:04.301424" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:05.302740" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:05.303041" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:04.300891" elapsed="1.002271"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:04.242112" elapsed="1.061318"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:05.305148" level="TRACE">Arguments: [ "(//*[@id='donuts']//*[@class='btn select'])[12]" ]</msg>
+<msg time="2025-02-19T11:15:05.305357" level="INFO">Clicks the element '(//*[@id='donuts']//*[@class='btn select'])[12]'.</msg>
+<msg time="2025-02-19T11:15:05.306269" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:05.367883" level="DEBUG">Clicked element: '(//*[@id='donuts']//*[@class='btn select'])[12]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:05.368882" level="TRACE">Return: None</msg>
+<arg>(//*[@id='donuts']//*[@class='btn select'])[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:05.304218" elapsed="0.065144"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:05.369362" level="TRACE">Arguments: [ '11 + 1' ]</msg>
+<msg time="2025-02-19T11:15:05.370485" level="TRACE">Return: 12</msg>
+<msg time="2025-02-19T11:15:05.370485" level="INFO">${Count} = 12</msg>
+<var>${Count}</var>
+<arg>${Count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:05.369362" elapsed="0.001510"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:05.370872" level="TRACE">Arguments: [ '12 + 1' ]</msg>
+<msg time="2025-02-19T11:15:05.370872" level="TRACE">Return: 13</msg>
+<msg time="2025-02-19T11:15:05.370872" level="INFO">${index} = 13</msg>
+<var>${index}</var>
+<arg>${index} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-19T11:15:05.370872" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:05.370872" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg time="2025-02-19T11:15:06.371481" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-19T11:15:06.371481" level="TRACE">Return: None</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:05.370872" elapsed="1.000609"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:05.303558" elapsed="1.067923"/>
+</iter>
+<status status="PASS" start="2025-02-19T11:14:53.565428" elapsed="12.806596"/>
+</while>
+<msg time="2025-02-19T11:15:06.372024" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:14:52.652918" elapsed="13.719106"/>
+</kw>
+<kw name="Go to add some magic section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:06.373126" level="TRACE">Arguments: [  ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:15:06.373641" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:15:06.405082" level="DEBUG">Scrolled to //div[@id="customiser"]//following-sibling::div[@class="next_step"] field if needed.</msg>
+<msg time="2025-02-19T11:15:06.405082" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:15:06.373126" elapsed="0.031956"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:06.406337" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:15:06.406867" level="INFO">Clicks the element '//div[@id="customiser"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:15:06.407916" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:06.478610" level="DEBUG">Clicked element: '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:06.479203" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:06.405694" elapsed="0.073509"/>
+</kw>
+<msg time="2025-02-19T11:15:06.479203" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:06.372576" elapsed="0.106627"/>
+</kw>
+<kw name="Add some candles" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:06.480632" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:06.480632" level="TRACE">Arguments: [ ${locator}='(//h4[text() ="Add Candles"])[1]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:06.482235" level="TRACE">Arguments: [ '(//h4[text() ="Add Candles"])[1]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:06.487239" level="INFO">Waited for Element with selector (//h4[text() ="Add Candles"])[1] at state visible</msg>
+<msg time="2025-02-19T11:15:06.487239" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:06.480632" elapsed="0.006607"/>
+</kw>
+<msg time="2025-02-19T11:15:06.487239" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Candles"])[1]</arg>
+<status status="PASS" start="2025-02-19T11:15:06.480632" elapsed="0.006607"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:06.488314" level="TRACE">Arguments: [ '(//h4[text() ="Add Candles"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:06.488314" level="INFO">Clicks the element '(//h4[text() ="Add Candles"])[1]'.</msg>
+<msg time="2025-02-19T11:15:06.489536" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:07.387205" level="DEBUG">Clicked element: '(//h4[text() ="Add Candles"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:07.387789" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Candles"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:06.487239" elapsed="0.900550"/>
+</kw>
+<msg time="2025-02-19T11:15:07.388375" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:06.479852" elapsed="0.908523"/>
+</kw>
+<kw name="Add a message to a donut" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:07.389530" level="TRACE">Arguments: [ ${text}='Just For You' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:07.390766" level="TRACE">Arguments: [ "(//h4[text() ='Add Message To A Donut:'])[1]" | &lt;ElementState.enabled: 16&gt; ]</msg>
+<msg time="2025-02-19T11:15:07.404954" level="INFO">Waited for Element with selector (//h4[text() ='Add Message To A Donut:'])[1] at state enabled</msg>
+<msg time="2025-02-19T11:15:07.405173" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ='Add Message To A Donut:'])[1]</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.389530" elapsed="0.015643"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:07.406388" level="TRACE">Arguments: [ '(//h4[text() ="Add Message To A Donut:"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:07.406388" level="INFO">Clicks the element '(//h4[text() ="Add Message To A Donut:"])[1]'.</msg>
+<msg time="2025-02-19T11:15:07.407566" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:07.447566" level="DEBUG">Clicked element: '(//h4[text() ="Add Message To A Donut:"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:07.447566" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Message To A Donut:"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.405787" elapsed="0.041779"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-19T11:15:07.448756" level="TRACE">Arguments: [ '//div[@class="selected"]//input[@placeholder="3 words maximum"]' | 'Just For You' ]</msg>
+<msg time="2025-02-19T11:15:07.448756" level="INFO">Fills the text 'Just For You' in the given field.</msg>
+<msg time="2025-02-19T11:15:07.466370" level="DEBUG">Fill text Just For You on //div[@class="selected"]//input[@placeholder="3 words maximum"] with force: false</msg>
+<msg time="2025-02-19T11:15:07.466370" level="TRACE">Return: None</msg>
+<arg>//div[@class="selected"]//input[@placeholder="3 words maximum"]</arg>
+<arg>${text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.447566" elapsed="0.018804"/>
+</kw>
+<msg time="2025-02-19T11:15:07.466370" level="TRACE">Return: None</msg>
+<arg>Just For You</arg>
+<status status="PASS" start="2025-02-19T11:15:07.388939" elapsed="0.077431"/>
+</kw>
+<kw name="Get the total on the Order Now Page" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:07.466370" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:07.470753" level="TRACE">Arguments: [ '//div[@id="bar"]//div[@class="sub_price"]/span' ]</msg>
+<msg time="2025-02-19T11:15:07.489566" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:07.490565" level="INFO">Text: '31.00'</msg>
+<msg time="2025-02-19T11:15:07.490565" level="TRACE">Return: '31.00'</msg>
+<msg time="2025-02-19T11:15:07.490565" level="INFO">${OrderNowTotal} = 31.00</msg>
+<var>${OrderNowTotal}</var>
+<arg>${Sub_Total_Order_Now}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.466370" elapsed="0.024195"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:15:07.491560" level="TRACE">Arguments: [ '${OrderNowTotal}' ]</msg>
+<msg time="2025-02-19T11:15:07.491560" level="INFO">${OrderNowTotal} = 31.00</msg>
+<msg time="2025-02-19T11:15:07.491560" level="TRACE">Return: None</msg>
+<arg>${OrderNowTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.490565" elapsed="0.000995"/>
+</kw>
+<msg time="2025-02-19T11:15:07.491560" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:07.466370" elapsed="0.025190"/>
+</kw>
+<kw name="Select Add to Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:07.492563" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:07.492563" level="TRACE">Arguments: [ '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' ]</msg>
+<msg time="2025-02-19T11:15:07.492563" level="INFO">Clicks the element '//div[@id="bar"]//button[contains(text(),"Add to Cart")]'.</msg>
+<msg time="2025-02-19T11:15:07.494243" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:07.569520" level="DEBUG">Clicked element: '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:07.569520" level="TRACE">Return: None</msg>
+<arg>${Add_to_Cart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.492563" elapsed="0.076957"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:07.570529" level="TRACE">Arguments: [ ${locator}='//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:07.572023" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:08.877432" level="INFO">Waited for Element with selector //div[@class="modal-content"]//a[contains(text(),"View Cart")] at state visible</msg>
+<msg time="2025-02-19T11:15:08.877432" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:07.571379" elapsed="1.306053"/>
+</kw>
+<msg time="2025-02-19T11:15:08.877985" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<status status="PASS" start="2025-02-19T11:15:07.570529" elapsed="1.307456"/>
+</kw>
+<msg time="2025-02-19T11:15:08.877985" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:07.491560" elapsed="1.386425"/>
+</kw>
+<kw name="Verify Cart pop up information is as Expected" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:08.879219" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:08.880694" level="TRACE">Arguments: [ "(//div[@class='modal-body'])[3]" | &lt;AssertionOperator.equal: '=='&gt; | 'Your box was added to cart\nVIEW CART\nStart another box' ]</msg>
+<msg time="2025-02-19T11:15:08.897944" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:08.897944" level="INFO">Text: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<msg time="2025-02-19T11:15:08.897944" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.016954421997070312 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:08.898461" level="TRACE">Return: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<arg>(//div[@class='modal-body'])[3]</arg>
+<arg>==</arg>
+<arg>${Cart_PopUp}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:08.879804" elapsed="0.018685"/>
+</kw>
+<msg time="2025-02-19T11:15:08.898489" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:08.878501" elapsed="0.019988"/>
+</kw>
+<kw name="Select View the cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:08.899030" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:08.900110" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<msg time="2025-02-19T11:15:08.900110" level="INFO">Clicks the element '//div[@class="modal-content"]//a[contains(text(),"View Cart")]'.</msg>
+<msg time="2025-02-19T11:15:08.900624" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:10.412542" level="DEBUG">Clicked element: '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:10.412542" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:08.899570" elapsed="1.513611"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:10.413816" level="TRACE">Arguments: [ ${locator}="//h1[@class='entry-title']" ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:10.415083" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:10.605960" level="INFO">Waited for Element with selector //h1[@class='entry-title'] at state visible</msg>
+<msg time="2025-02-19T11:15:10.605960" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.414417" elapsed="0.191543"/>
+</kw>
+<msg time="2025-02-19T11:15:10.605960" level="TRACE">Return: None</msg>
+<arg>//h1[@class='entry-title']</arg>
+<status status="PASS" start="2025-02-19T11:15:10.413181" elapsed="0.193769"/>
+</kw>
+<msg time="2025-02-19T11:15:10.606950" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:08.899030" elapsed="1.707920"/>
+</kw>
+<kw name="Verify Cart contains the items I have ordered for the bad books scenario" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:10.607945" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.608940" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;AssertionOperator.equal: '=='&gt; | 'my cart (3 items)' ]</msg>
+<msg time="2025-02-19T11:15:10.824902" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.824902" level="INFO">Text: 'my cart (3 items)'</msg>
+<msg time="2025-02-19T11:15:10.825909" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.21696853637695312 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.825909" level="TRACE">Return: 'my cart (3 items)'</msg>
+<arg>//h1[@class='entry-title']</arg>
+<arg>==</arg>
+<arg>my cart (3 items)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.607945" elapsed="0.217964"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.827904" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[1]" | &lt;AssertionOperator.equal: '=='&gt; | 'Offbeat Dozen' ]</msg>
+<msg time="2025-02-19T11:15:10.842913" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.842913" level="INFO">Text: 'Offbeat Dozen'</msg>
+<msg time="2025-02-19T11:15:10.842913" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.015009403228759766 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.842913" level="TRACE">Return: 'Offbeat Dozen'</msg>
+<arg>(//td[@class='product-name']/a)[1]</arg>
+<arg>==</arg>
+<arg>Offbeat Dozen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.825909" elapsed="0.017004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.844922" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[2]" | &lt;AssertionOperator.equal: '=='&gt; | 'Candles' ]</msg>
+<msg time="2025-02-19T11:15:10.860825" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.860825" level="INFO">Text: 'Candles'</msg>
+<msg time="2025-02-19T11:15:10.860825" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.015903472900390625 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.860825" level="TRACE">Return: 'Candles'</msg>
+<arg>(//td[@class='product-name']/a)[2]</arg>
+<arg>==</arg>
+<arg>Candles</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.843923" elapsed="0.016902"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.861827" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[3]" | &lt;AssertionOperator.equal: '=='&gt; | 'Piped name' ]</msg>
+<msg time="2025-02-19T11:15:10.878213" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.878213" level="INFO">Text: 'Piped name'</msg>
+<msg time="2025-02-19T11:15:10.878213" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.015384674072265625 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.879219" level="TRACE">Return: 'Piped name'</msg>
+<arg>(//td[@class='product-name']/a)[3]</arg>
+<arg>==</arg>
+<arg>Piped name</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.861827" elapsed="0.017392"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.880216" level="TRACE">Arguments: [ '(//dd[@class="variation-Selection"]/p)[2]' | &lt;AssertionOperator.equal: '=='&gt; | '"Just For You"' ]</msg>
+<msg time="2025-02-19T11:15:10.897272" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.897272" level="INFO">Text: '"Just For You"'</msg>
+<msg time="2025-02-19T11:15:10.897272" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.017055988311767578 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.897272" level="TRACE">Return: '"Just For You"'</msg>
+<arg>(//dd[@class="variation-Selection"]/p)[2]</arg>
+<arg>==</arg>
+<arg>"Just For You"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.879219" elapsed="0.018053"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:10.898271" level="TRACE">Arguments: [ '//span[@class="product-remove"]' | &lt;AssertionOperator.equal: '=='&gt; | '3' ]</msg>
+<msg time="2025-02-19T11:15:10.902620" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.0033490657806396484 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:10.902620" level="TRACE">Return: 3</msg>
+<arg>${Remove_Button}</arg>
+<arg>==</arg>
+<arg>3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.898271" elapsed="0.005349"/>
+</kw>
+<msg time="2025-02-19T11:15:10.903620" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:10.606950" elapsed="0.296670"/>
+</kw>
+<kw name="Get the total in the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:10.904619" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:10.905618" level="TRACE">Arguments: [ '//tr[@class="cart-subtotal"]//bdi[1]' ]</msg>
+<msg time="2025-02-19T11:15:10.919096" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:10.920095" level="INFO">Text: '€31.00'</msg>
+<msg time="2025-02-19T11:15:10.920095" level="TRACE">Return: '€31.00'</msg>
+<msg time="2025-02-19T11:15:10.920095" level="INFO">${CartTotal} = €31.00</msg>
+<var>${CartTotal}</var>
+<arg>//tr[@class="cart-subtotal"]//bdi[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.904619" elapsed="0.015476"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:15:10.921089" level="TRACE">Arguments: [ '${CartTotal}' ]</msg>
+<msg time="2025-02-19T11:15:10.921089" level="INFO">${CartTotal} = €31.00</msg>
+<msg time="2025-02-19T11:15:10.921089" level="TRACE">Return: None</msg>
+<arg>${CartTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.920095" elapsed="0.000994"/>
+</kw>
+<msg time="2025-02-19T11:15:10.921089" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:10.903620" elapsed="0.017469"/>
+</kw>
+<kw name="Verify the total on the Order Now Page is the same as the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:10.922089" level="TRACE">Arguments: [  ]</msg>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:10.923089" level="TRACE">Arguments: [ '€31.00' ]</msg>
+<msg time="2025-02-19T11:15:10.923089" level="TRACE">Return: '€31.00'</msg>
+<msg time="2025-02-19T11:15:10.923089" level="INFO">${Add_Euro_to_OrderNowTotal} = €31.00</msg>
+<var>${Add_Euro_to_OrderNowTotal}</var>
+<arg>€${OrderNowTotal}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.923089" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-02-19T11:15:10.924089" level="TRACE">Arguments: [ '€31.00' | '€31.00' ]</msg>
+<msg time="2025-02-19T11:15:10.924089" level="DEBUG">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'str'&gt;</msg>
+<msg time="2025-02-19T11:15:10.924089" level="TRACE">Return: None</msg>
+<arg>${Add_Euro_to_OrderNowTotal}</arg>
+<arg>${CartTotal}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.923089" elapsed="0.001000"/>
+</kw>
+<msg time="2025-02-19T11:15:10.924089" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:10.922089" elapsed="0.002000"/>
+</kw>
+<kw name="Empty the Cart at the end of the test" owner="CartKeywords" type="TEARDOWN">
+<msg time="2025-02-19T11:15:10.925089" level="TRACE">Arguments: [  ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:10.926089" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:10.927089" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:10.931099" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:15:10.931099" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.926089" elapsed="0.005010"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:10.932095" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:10.932095" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:10.932095" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.932095" elapsed="0.000995"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:10.933090" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:10.933090" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:10.933090" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:10.925089" elapsed="0.008001"/>
+</kw>
+<while condition="${is_Cart_Empty} != True">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:10.934392" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:10.935390" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:15:10.936397" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:11.148642" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:11.148642" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:10.934392" elapsed="0.214250"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:11.150643" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:11.151928" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:14.017298" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:15:14.018293" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:11.150643" elapsed="2.867650"/>
+</kw>
+<msg time="2025-02-19T11:15:14.018293" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:15:11.149639" elapsed="2.868654"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:14.019284" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:14.020283" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:14.023901" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:15:14.023901" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:14.019284" elapsed="0.004617"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:14.024898" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:14.024898" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:14.024898" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:14.024898" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:14.024898" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:14.025906" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:14.025906" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:14.018293" elapsed="0.007613"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:10.933090" elapsed="3.092816"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:14.027079" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:14.027079" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:15:14.028290" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:14.981690" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:14.981690" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:14.025906" elapsed="0.955784"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:14.982745" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:14.983749" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:16.787018" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:15:16.787018" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:14.982745" elapsed="1.804273"/>
+</kw>
+<msg time="2025-02-19T11:15:16.787018" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:15:14.982745" elapsed="1.804273"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:16.788016" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:16.789018" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:16.793016" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:15:16.793196" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:16.788016" elapsed="0.005180"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:16.793196" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:16.794468" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:16.794468" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:16.793196" elapsed="0.001272"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:16.794468" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:16.794468" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:16.794468" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:16.788016" elapsed="0.006452"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:14.025906" elapsed="2.768562"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:16.796190" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:16.796190" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:15:16.796958" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:17.713784" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:17.714329" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:16.795620" elapsed="0.918709"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:17.715374" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:17.715374" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:19.519974" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:15:19.520570" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:17.715374" elapsed="1.805196"/>
+</kw>
+<msg time="2025-02-19T11:15:19.520570" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:15:17.714857" elapsed="1.805713"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:19.521536" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:19.522537" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:19.525534" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:19.525534" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.521536" elapsed="0.003998"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:19.526662" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:19.526662" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:19.526662" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.525534" elapsed="0.001128"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:19.526662" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:19.527782" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:19.527782" level="INFO">${is_Cart_Empty} = True</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:19.520570" elapsed="0.007212"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:16.794468" elapsed="2.733314"/>
+</iter>
+<status status="PASS" start="2025-02-19T11:15:10.933090" elapsed="8.594692"/>
+</while>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:19.527782" level="TRACE">Arguments: [ ${Element Locator}='//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:19.529948" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:15:19.534228" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:19.534851" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.529445" elapsed="0.005406"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:19.535469" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:19.535469" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:19.535469" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.534851" elapsed="0.000618"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:19.535469" elapsed="0.000621"/>
+</return>
+<msg time="2025-02-19T11:15:19.536090" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:19.536090" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>${Order_Now_Button}</arg>
+<status status="PASS" start="2025-02-19T11:15:19.527782" elapsed="0.008308"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:19.536716" level="TRACE">Arguments: [ 'True == True' | 'Click' | '${Order_Now_Button}' ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:19.537336" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:15:19.537336" level="INFO">Clicks the element '//*[@id="main-menu"]//a[text()="order now"]'.</msg>
+<msg time="2025-02-19T11:15:19.537961" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:21.596058" level="DEBUG">Clicked element: '//*[@id="main-menu"]//a[text()="order now"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:21.597063" level="TRACE">Return: None</msg>
+<arg>${Order_Now_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.536716" elapsed="2.060347"/>
+</kw>
+<msg time="2025-02-19T11:15:21.597063" level="TRACE">Return: None</msg>
+<arg>${isPresent} == True</arg>
+<arg>Click</arg>
+<arg>${Order_Now_Button}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:15:19.536090" elapsed="2.060973"/>
+</kw>
+<msg time="2025-02-19T11:15:21.597063" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:10.925089" elapsed="10.671974"/>
+</kw>
+<msg time="2025-02-19T11:15:21.600060" level="INFO">Set timeout to: 10000</msg>
+<doc>Verify the donuts ordered are added to the cart</doc>
+<status status="PASS" start="2025-02-19T11:14:49.413606" elapsed="32.184459"/>
+</test>
+<test id="s1-s2-s1-t3" name="Customer wants luxury" line="46">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T11:15:21.602063" level="TRACE">Arguments: [ '3s' ]</msg>
+<msg time="2025-02-19T11:15:24.602272" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-19T11:15:24.602395" level="TRACE">Return: None</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T11:15:21.601065" elapsed="3.001330"/>
+</kw>
+<kw name="Select the donuts from the Offbeat Range and verify the quantity is one box" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.603502" level="TRACE">Arguments: [ ${Donut_Name}='Birthday Double Dozen' | ${Donut_Range}='Offbeat Dozen' ]</msg>
+<kw name="Select the donut range" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.604052" level="TRACE">Arguments: [ ${Range}='Offbeat Dozen' ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:15:24.604603" level="TRACE">Arguments: [ 'id=top_boxes' ]</msg>
+<msg time="2025-02-19T11:15:24.653695" level="DEBUG">Scrolled to id=top_boxes field if needed.</msg>
+<msg time="2025-02-19T11:15:24.654726" level="TRACE">Return: None</msg>
+<arg>id=top_boxes</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.604052" elapsed="0.050674"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:24.654726" level="TRACE">Arguments: [ ${Element Locator}='//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:24.655726" level="TRACE">Arguments: [ '//a[contains(text(),"Offbeat Dozen")][@class="active"]' ]</msg>
+<msg time="2025-02-19T11:15:24.659721" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:24.659721" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.655726" elapsed="0.003995"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:24.660589" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:24.660589" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:24.660589" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.659721" elapsed="0.000868"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:24.661112" elapsed="0.000111"/>
+</return>
+<msg time="2025-02-19T11:15:24.661223" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:24.661223" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//a[contains(text(),"${Range}")][@class="active"]</arg>
+<status status="PASS" start="2025-02-19T11:15:24.654726" elapsed="0.006497"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:24.661848" level="TRACE">Arguments: [ 'True == False' | 'Click' | '//a[contains(text(),"${Range}")]' ]</msg>
+<msg time="2025-02-19T11:15:24.661848" level="TRACE">Return: None</msg>
+<arg>${isPresent} == False</arg>
+<arg>Click</arg>
+<arg>//a[contains(text(),"${Range}")]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.661740" elapsed="0.000108"/>
+</kw>
+<msg time="2025-02-19T11:15:24.661848" level="TRACE">Return: None</msg>
+<arg>${Donut_Range}</arg>
+<status status="PASS" start="2025-02-19T11:15:24.603502" elapsed="0.058346"/>
+</kw>
+<kw name="Select the donut by name" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.662479" level="TRACE">Arguments: [ ${Name}='Birthday Double Dozen' ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:24.663098" level="TRACE">Arguments: [ ${Element Locator}='//h3[text()="Birthday Double Dozen"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:24.663711" level="TRACE">Arguments: [ '//h3[text()="Birthday Double Dozen"]' ]</msg>
+<msg time="2025-02-19T11:15:24.667453" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:24.667453" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.663711" elapsed="0.003742"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:24.667984" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:24.667984" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:24.667984" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.667984" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:24.669025" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:24.669336" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:24.669336" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>//h3[text()="${Name}"]</arg>
+<status status="PASS" start="2025-02-19T11:15:24.663098" elapsed="0.006238"/>
+</kw>
+<while condition="${isPresent} == False">
+<iter>
+<kw name="Click" owner="Browser">
+<arg>//*[contains(@class,"next_offbeat-dozen")]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-02-19T11:15:24.669864" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-02-19T11:15:24.669336" elapsed="0.000528"/>
+</iter>
+<status status="NOT RUN" start="2025-02-19T11:15:24.669336" elapsed="0.001565"/>
+</while>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:24.670901" level="TRACE">Arguments: [ '//h3[text()="Birthday Double Dozen"]//parent::div//*[text()="Select Box"]' ]</msg>
+<msg time="2025-02-19T11:15:24.671904" level="INFO">Clicks the element '//h3[text()="Birthday Double Dozen"]//parent::div//*[text()="Select Box"]'.</msg>
+<msg time="2025-02-19T11:15:24.673806" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:24.815054" level="DEBUG">Clicked element: '//h3[text()="Birthday Double Dozen"]//parent::div//*[text()="Select Box"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:24.816045" level="TRACE">Return: None</msg>
+<arg>//h3[text()="${Name}"]${Select_Box_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.670901" elapsed="0.145144"/>
+</kw>
+<msg time="2025-02-19T11:15:24.816045" level="TRACE">Return: None</msg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:15:24.662479" elapsed="0.153566"/>
+</kw>
+<kw name="Verify the button number has changed" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.817046" level="TRACE">Arguments: [ ${Number}='1' | ${Donut_name}='Birthday Double Dozen' ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:24.818046" level="TRACE">Arguments: [ '//h3[text() ="Birthday Double Dozen"]//following-sibling::div[@class="qty"]/span' | &lt;AssertionOperator.equal: '=='&gt; | '1' ]</msg>
+<msg time="2025-02-19T11:15:24.851006" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:24.851006" level="INFO">Text: '1'</msg>
+<msg time="2025-02-19T11:15:24.851006" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.031957387924194336 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:24.851313" level="TRACE">Return: '1'</msg>
+<arg>//h3[text() ="${Donut_name}"]${Box_Quantity}</arg>
+<arg>==</arg>
+<arg>${Number}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.818046" elapsed="0.033267"/>
+</kw>
+<msg time="2025-02-19T11:15:24.851313" level="TRACE">Return: None</msg>
+<arg>1</arg>
+<arg>${Donut_Name}</arg>
+<status status="PASS" start="2025-02-19T11:15:24.817046" elapsed="0.034267"/>
+</kw>
+<msg time="2025-02-19T11:15:24.851313" level="TRACE">Return: None</msg>
+<arg>Birthday Double Dozen</arg>
+<arg>Offbeat Dozen</arg>
+<status status="PASS" start="2025-02-19T11:15:24.602952" elapsed="0.248361"/>
+</kw>
+<kw name="Go to fill your boxes section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.852315" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:24.853316" level="TRACE">Arguments: [ '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:15:24.853316" level="INFO">Clicks the element '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:15:24.854923" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:24.899392" level="DEBUG">Clicked element: '//div[@id="top_boxes"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:24.899392" level="TRACE">Return: None</msg>
+<arg>${Section_1}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.852315" elapsed="0.047077"/>
+</kw>
+<msg time="2025-02-19T11:15:24.900387" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:24.852315" elapsed="0.048072"/>
+</kw>
+<kw name="Select Auto Fill the box" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:24.900387" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:24.901382" level="TRACE">Arguments: [ "(//a[@class='box_autofill'])[1]" ]</msg>
+<msg time="2025-02-19T11:15:24.901382" level="INFO">Clicks the element '(//a[@class='box_autofill'])[1]'.</msg>
+<msg time="2025-02-19T11:15:24.902964" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:25.838893" level="DEBUG">Clicked element: '(//a[@class='box_autofill'])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:25.838893" level="TRACE">Return: None</msg>
+<arg>(//a[@class='box_autofill'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:24.901382" elapsed="0.937511"/>
+</kw>
+<msg time="2025-02-19T11:15:25.839902" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:24.900387" elapsed="0.939515"/>
+</kw>
+<kw name="Go to add some magic section" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:25.840902" level="TRACE">Arguments: [  ]</msg>
+<kw name="Scroll To Element" owner="Browser">
+<msg time="2025-02-19T11:15:25.841901" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:15:25.891828" level="DEBUG">Scrolled to //div[@id="customiser"]//following-sibling::div[@class="next_step"] field if needed.</msg>
+<msg time="2025-02-19T11:15:25.891828" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-19T11:15:25.840902" elapsed="0.051451"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:25.893669" level="TRACE">Arguments: [ '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' ]</msg>
+<msg time="2025-02-19T11:15:25.893706" level="INFO">Clicks the element '//div[@id="customiser"]//following-sibling::div[@class="next_step"]'.</msg>
+<msg time="2025-02-19T11:15:25.894329" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:25.930598" level="DEBUG">Clicked element: '//div[@id="customiser"]//following-sibling::div[@class="next_step"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:25.931602" level="TRACE">Return: None</msg>
+<arg>${Section_2}${Next_steps}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:25.892454" elapsed="0.039148"/>
+</kw>
+<msg time="2025-02-19T11:15:25.931602" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:25.839902" elapsed="0.091700"/>
+</kw>
+<kw name="Add some luxury candles" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:25.932599" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:25.932599" level="TRACE">Arguments: [ ${locator}='(//h4[text() ="Add Candles"])[last()]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:25.934202" level="TRACE">Arguments: [ '(//h4[text() ="Add Candles"])[last()]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:25.942015" level="INFO">Waited for Element with selector (//h4[text() ="Add Candles"])[last()] at state visible</msg>
+<msg time="2025-02-19T11:15:25.942015" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:25.932599" elapsed="0.009416"/>
+</kw>
+<msg time="2025-02-19T11:15:25.942751" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Candles"])[last()]</arg>
+<status status="PASS" start="2025-02-19T11:15:25.932599" elapsed="0.010152"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:25.943289" level="TRACE">Arguments: [ '(//h4[text() ="Add Candles"])[last()]' ]</msg>
+<msg time="2025-02-19T11:15:25.943289" level="INFO">Clicks the element '(//h4[text() ="Add Candles"])[last()]'.</msg>
+<msg time="2025-02-19T11:15:25.944326" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:26.851874" level="DEBUG">Clicked element: '(//h4[text() ="Add Candles"])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:26.851874" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Candles"])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:25.942751" elapsed="0.909123"/>
+</kw>
+<msg time="2025-02-19T11:15:26.852504" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:25.931602" elapsed="0.920902"/>
+</kw>
+<kw name="Add a card" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:26.853085" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:26.853715" level="TRACE">Arguments: [ "(//h4[text() ='Add A Card:'])[last()]" ]</msg>
+<msg time="2025-02-19T11:15:26.854407" level="INFO">Clicks the element '(//h4[text() ='Add A Card:'])[last()]'.</msg>
+<msg time="2025-02-19T11:15:26.855227" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:26.897254" level="DEBUG">Clicked element: '(//h4[text() ='Add A Card:'])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:26.897254" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ='Add A Card:'])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:26.853085" elapsed="0.044169"/>
+</kw>
+<msg time="2025-02-19T11:15:26.897254" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:26.852504" elapsed="0.044750"/>
+</kw>
+<kw name="Add a greeting" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:26.898261" level="TRACE">Arguments: [ ${text}='All the best on your special day' ]</msg>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-19T11:15:26.899262" level="TRACE">Arguments: [ "(//div[@class='customise']//textarea)[last()]" | 'All the best on your special day' ]</msg>
+<msg time="2025-02-19T11:15:26.899262" level="INFO">Fills the text 'All the best on your special day' in the given field.</msg>
+<msg time="2025-02-19T11:15:26.921148" level="DEBUG">Fill text All the best on your special day on (//div[@class='customise']//textarea)[last()] with force: false</msg>
+<msg time="2025-02-19T11:15:26.921148" level="TRACE">Return: None</msg>
+<arg>(//div[@class='customise']//textarea)[last()]</arg>
+<arg>${text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:26.898261" elapsed="0.023416"/>
+</kw>
+<msg time="2025-02-19T11:15:26.922040" level="TRACE">Return: None</msg>
+<arg>All the best on your special day</arg>
+<status status="PASS" start="2025-02-19T11:15:26.898261" elapsed="0.023779"/>
+</kw>
+<kw name="Add an occasion" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:26.923176" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:26.924304" level="TRACE">Arguments: [ "(//label[contains(text(),'Happy Birthday')])[last()]" ]</msg>
+<msg time="2025-02-19T11:15:26.924304" level="INFO">Clicks the element '(//label[contains(text(),'Happy Birthday')])[last()]'.</msg>
+<msg time="2025-02-19T11:15:26.925231" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:26.967558" level="DEBUG">Clicked element: '(//label[contains(text(),'Happy Birthday')])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:26.968088" level="TRACE">Return: None</msg>
+<arg>(//label[contains(text(),'Happy Birthday')])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:26.923176" elapsed="0.044912"/>
+</kw>
+<msg time="2025-02-19T11:15:26.968088" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:26.922612" elapsed="0.045476"/>
+</kw>
+<kw name="Add a pink bow" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:26.969131" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:26.969131" level="TRACE">Arguments: [ "(//h4[text() ='Add A Bow:'])[last()]" ]</msg>
+<msg time="2025-02-19T11:15:26.969131" level="INFO">Clicks the element '(//h4[text() ='Add A Bow:'])[last()]'.</msg>
+<msg time="2025-02-19T11:15:26.970131" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:27.008733" level="DEBUG">Clicked element: '(//h4[text() ='Add A Bow:'])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:27.009423" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ='Add A Bow:'])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:26.969131" elapsed="0.040292"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:27.010531" level="TRACE">Arguments: [ "(//label[contains(text(),'Pink')])[last()]" ]</msg>
+<msg time="2025-02-19T11:15:27.010531" level="INFO">Clicks the element '(//label[contains(text(),'Pink')])[last()]'.</msg>
+<msg time="2025-02-19T11:15:27.011806" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:27.059647" level="DEBUG">Clicked element: '(//label[contains(text(),'Pink')])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:27.059647" level="TRACE">Return: None</msg>
+<arg>(//label[contains(text(),'Pink')])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.010019" elapsed="0.049628"/>
+</kw>
+<msg time="2025-02-19T11:15:27.059647" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:26.968088" elapsed="0.092555"/>
+</kw>
+<kw name="Add a luxury message to a donut" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:27.061472" level="TRACE">Arguments: [ ${text}='Just For You' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:27.062626" level="TRACE">Arguments: [ "(//h4[text() ='Add Message To A Donut:'])[last()]" | &lt;ElementState.enabled: 16&gt; ]</msg>
+<msg time="2025-02-19T11:15:27.106368" level="INFO">Waited for Element with selector (//h4[text() ='Add Message To A Donut:'])[last()] at state enabled</msg>
+<msg time="2025-02-19T11:15:27.106506" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ='Add Message To A Donut:'])[last()]</arg>
+<arg>enabled</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.062051" elapsed="0.044455"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:27.107704" level="TRACE">Arguments: [ '(//h4[text() ="Add Message To A Donut:"])[last()]' ]</msg>
+<msg time="2025-02-19T11:15:27.107704" level="INFO">Clicks the element '(//h4[text() ="Add Message To A Donut:"])[last()]'.</msg>
+<msg time="2025-02-19T11:15:27.109100" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:27.148414" level="DEBUG">Clicked element: '(//h4[text() ="Add Message To A Donut:"])[last()]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:27.148982" level="TRACE">Return: None</msg>
+<arg>(//h4[text() ="Add Message To A Donut:"])[last()]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.107089" elapsed="0.041893"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-19T11:15:27.150079" level="TRACE">Arguments: [ "(//div[@data-extra-type='pipped_name']//input[@type='text'])[last()]" | 'Just For You' ]</msg>
+<msg time="2025-02-19T11:15:27.150079" level="INFO">Fills the text 'Just For You' in the given field.</msg>
+<msg time="2025-02-19T11:15:27.161937" level="DEBUG">Fill text Just For You on (//div[@data-extra-type='pipped_name']//input[@type='text'])[last()] with force: false</msg>
+<msg time="2025-02-19T11:15:27.161937" level="TRACE">Return: None</msg>
+<arg>(//div[@data-extra-type='pipped_name']//input[@type='text'])[last()]</arg>
+<arg>${text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.148982" elapsed="0.012955"/>
+</kw>
+<msg time="2025-02-19T11:15:27.161937" level="TRACE">Return: None</msg>
+<arg>Just For You</arg>
+<status status="PASS" start="2025-02-19T11:15:27.061009" elapsed="0.101936"/>
+</kw>
+<kw name="Get the total on the Order Now Page" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:27.162945" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:27.164632" level="TRACE">Arguments: [ '//div[@id="bar"]//div[@class="sub_price"]/span' ]</msg>
+<msg time="2025-02-19T11:15:27.180403" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:27.181410" level="INFO">Text: '44.50'</msg>
+<msg time="2025-02-19T11:15:27.181410" level="TRACE">Return: '44.50'</msg>
+<msg time="2025-02-19T11:15:27.181410" level="INFO">${OrderNowTotal} = 44.50</msg>
+<var>${OrderNowTotal}</var>
+<arg>${Sub_Total_Order_Now}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.162945" elapsed="0.018465"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:15:27.181410" level="TRACE">Arguments: [ '${OrderNowTotal}' ]</msg>
+<msg time="2025-02-19T11:15:27.182564" level="INFO">${OrderNowTotal} = 44.50</msg>
+<msg time="2025-02-19T11:15:27.182564" level="TRACE">Return: None</msg>
+<arg>${OrderNowTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.181410" elapsed="0.001154"/>
+</kw>
+<msg time="2025-02-19T11:15:27.182564" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:27.162945" elapsed="0.019619"/>
+</kw>
+<kw name="Select Add to Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:27.183575" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:27.185418" level="TRACE">Arguments: [ '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' ]</msg>
+<msg time="2025-02-19T11:15:27.185418" level="INFO">Clicks the element '//div[@id="bar"]//button[contains(text(),"Add to Cart")]'.</msg>
+<msg time="2025-02-19T11:15:27.186501" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:27.251678" level="DEBUG">Clicked element: '//div[@id="bar"]//button[contains(text(),"Add to Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:27.251678" level="TRACE">Return: None</msg>
+<arg>${Add_to_Cart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.184568" elapsed="0.067110"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:27.253397" level="TRACE">Arguments: [ ${locator}='//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:27.254141" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:30.062964" level="INFO">Waited for Element with selector //div[@class="modal-content"]//a[contains(text(),"View Cart")] at state visible</msg>
+<msg time="2025-02-19T11:15:30.063559" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:27.253517" elapsed="2.810042"/>
+</kw>
+<msg time="2025-02-19T11:15:30.063559" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<status status="PASS" start="2025-02-19T11:15:27.252283" elapsed="2.811276"/>
+</kw>
+<msg time="2025-02-19T11:15:30.063559" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:27.183575" elapsed="2.879984"/>
+</kw>
+<kw name="Verify Cart pop up information is as Expected" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:30.064650" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:30.065190" level="TRACE">Arguments: [ "(//div[@class='modal-body'])[3]" | &lt;AssertionOperator.equal: '=='&gt; | 'Your box was added to cart\nVIEW CART\nStart another box' ]</msg>
+<msg time="2025-02-19T11:15:30.079741" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:30.079741" level="INFO">Text: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<msg time="2025-02-19T11:15:30.080256" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.014009714126586914 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:30.080304" level="TRACE">Return: 'Your box was added to cart\nVIEW CART\nStart another box'</msg>
+<arg>(//div[@class='modal-body'])[3]</arg>
+<arg>==</arg>
+<arg>${Cart_PopUp}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:30.064650" elapsed="0.015654"/>
+</kw>
+<msg time="2025-02-19T11:15:30.080304" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:30.064107" elapsed="0.016197"/>
+</kw>
+<kw name="Select View the cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:30.080866" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:30.081866" level="TRACE">Arguments: [ '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' ]</msg>
+<msg time="2025-02-19T11:15:30.082691" level="INFO">Clicks the element '//div[@class="modal-content"]//a[contains(text(),"View Cart")]'.</msg>
+<msg time="2025-02-19T11:15:30.084282" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:31.765525" level="DEBUG">Clicked element: '//div[@class="modal-content"]//a[contains(text(),"View Cart")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:31.766124" level="TRACE">Return: None</msg>
+<arg>${View_Cart_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:30.081433" elapsed="1.684691"/>
+</kw>
+<kw name="Wait For Element To Be Visible" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:31.767296" level="TRACE">Arguments: [ ${locator}="//h1[@class='entry-title']" ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:31.768474" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;ElementState.visible: 4&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:31.951761" level="INFO">Waited for Element with selector //h1[@class='entry-title'] at state visible</msg>
+<msg time="2025-02-19T11:15:31.952791" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>visible</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:31.767296" elapsed="0.185495"/>
+</kw>
+<msg time="2025-02-19T11:15:31.952791" level="TRACE">Return: None</msg>
+<arg>//h1[@class='entry-title']</arg>
+<status status="PASS" start="2025-02-19T11:15:31.766710" elapsed="0.187084"/>
+</kw>
+<msg time="2025-02-19T11:15:31.953794" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:30.080866" elapsed="1.872928"/>
+</kw>
+<kw name="Verify Cart contains the items I have ordered for the birthday scenario" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:31.955793" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:31.956818" level="TRACE">Arguments: [ "//h1[@class='entry-title']" | &lt;AssertionOperator.equal: '=='&gt; | 'my cart (6 items)' ]</msg>
+<msg time="2025-02-19T11:15:32.190554" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.191560" level="INFO">Text: 'my cart (6 items)'</msg>
+<msg time="2025-02-19T11:15:32.191560" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.2347421646118164 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.191560" level="TRACE">Return: 'my cart (6 items)'</msg>
+<arg>//h1[@class='entry-title']</arg>
+<arg>==</arg>
+<arg>my cart (6 items)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:31.955793" elapsed="0.235767"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.193551" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[1]" | &lt;AssertionOperator.equal: '=='&gt; | 'Birthday Double Dozen' ]</msg>
+<msg time="2025-02-19T11:15:32.210462" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.211115" level="INFO">Text: 'Birthday Double Dozen'</msg>
+<msg time="2025-02-19T11:15:32.211115" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.01756429672241211 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.211115" level="TRACE">Return: 'Birthday Double Dozen'</msg>
+<arg>(//td[@class='product-name']/a)[1]</arg>
+<arg>==</arg>
+<arg>Birthday Double Dozen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.192557" elapsed="0.018558"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.212362" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[2]" | &lt;AssertionOperator.contains: '*='&gt; | 'Candles' ]</msg>
+<msg time="2025-02-19T11:15:32.225957" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.226560" level="INFO">Text: 'Candles'</msg>
+<msg time="2025-02-19T11:15:32.226599" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.014236927032470703 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.226599" level="TRACE">Return: 'Candles'</msg>
+<arg>(//td[@class='product-name']/a)[2]</arg>
+<arg>*=</arg>
+<arg>Candles</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.211710" elapsed="0.014889"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.227239" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[3]" | &lt;AssertionOperator.contains: '*='&gt; | 'Card' ]</msg>
+<msg time="2025-02-19T11:15:32.242425" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.242425" level="INFO">Text: 'Card (included)'</msg>
+<msg time="2025-02-19T11:15:32.242425" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.014588356018066406 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.242425" level="TRACE">Return: 'Card (included)'</msg>
+<arg>(//td[@class='product-name']/a)[3]</arg>
+<arg>*=</arg>
+<arg>Card</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.226599" elapsed="0.015826"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.243721" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[4]" | &lt;AssertionOperator.contains: '*='&gt; | 'Bow' ]</msg>
+<msg time="2025-02-19T11:15:32.258110" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.258110" level="INFO">Text: 'Bow (included)'</msg>
+<msg time="2025-02-19T11:15:32.258110" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.014388561248779297 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.258110" level="TRACE">Return: 'Bow (included)'</msg>
+<arg>(//td[@class='product-name']/a)[4]</arg>
+<arg>*=</arg>
+<arg>Bow</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.243069" elapsed="0.015041"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.259944" level="TRACE">Arguments: [ "(//td[@class='product-name']/a)[5]" | &lt;AssertionOperator.contains: '*='&gt; | 'Piped name' ]</msg>
+<msg time="2025-02-19T11:15:32.273015" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.273015" level="INFO">Text: 'Piped name (included)'</msg>
+<msg time="2025-02-19T11:15:32.273015" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.013071060180664062 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.273015" level="TRACE">Return: 'Piped name (included)'</msg>
+<arg>(//td[@class='product-name']/a)[5]</arg>
+<arg>*=</arg>
+<arg>Piped name</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.259296" elapsed="0.014720"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:32.274016" level="TRACE">Arguments: [ '//a[text()="Birthday Double Dozen"]//parent::td[@data-title="Product"]//span[@class="product-remove"]' | &lt;AssertionOperator.equal: '=='&gt; | '1' ]</msg>
+<msg time="2025-02-19T11:15:32.278827" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.0038089752197265625 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.278827" level="TRACE">Return: 1</msg>
+<arg>//a[text()="Birthday Double Dozen"]//parent::td[@data-title="Product"]${Remove_Button}</arg>
+<arg>==</arg>
+<arg>1</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.274016" elapsed="0.004811"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:32.280043" level="TRACE">Arguments: [ '//a[text()="Candles"]//parent::td[@data-title="Product"]//span[@class="product-remove"]' | &lt;AssertionOperator.equal: '=='&gt; | '1' ]</msg>
+<msg time="2025-02-19T11:15:32.283114" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.003070831298828125 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2025-02-19T11:15:32.283114" level="TRACE">Return: 1</msg>
+<arg>//a[text()="Candles"]//parent::td[@data-title="Product"]${Remove_Button}</arg>
+<arg>==</arg>
+<arg>1</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.279401" elapsed="0.003713"/>
+</kw>
+<msg time="2025-02-19T11:15:32.283114" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:31.953794" elapsed="0.329320"/>
+</kw>
+<kw name="Get the total in the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:32.284398" level="TRACE">Arguments: [  ]</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-19T11:15:32.285038" level="TRACE">Arguments: [ '//tr[@class="cart-subtotal"]//bdi[1]' ]</msg>
+<msg time="2025-02-19T11:15:32.309374" level="DEBUG">Text received successfully.</msg>
+<msg time="2025-02-19T11:15:32.309374" level="INFO">Text: '€44.50'</msg>
+<msg time="2025-02-19T11:15:32.309374" level="TRACE">Return: '€44.50'</msg>
+<msg time="2025-02-19T11:15:32.310378" level="INFO">${CartTotal} = €44.50</msg>
+<var>${CartTotal}</var>
+<arg>//tr[@class="cart-subtotal"]//bdi[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.284398" elapsed="0.025980"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-02-19T11:15:32.310378" level="TRACE">Arguments: [ '${CartTotal}' ]</msg>
+<msg time="2025-02-19T11:15:32.311378" level="INFO">${CartTotal} = €44.50</msg>
+<msg time="2025-02-19T11:15:32.311378" level="TRACE">Return: None</msg>
+<arg>${CartTotal}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.310378" elapsed="0.001000"/>
+</kw>
+<msg time="2025-02-19T11:15:32.311378" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:32.283758" elapsed="0.027620"/>
+</kw>
+<kw name="Verify the total on the Order Now Page is the same as the Cart" owner="OrderNowKeywords">
+<msg time="2025-02-19T11:15:32.311378" level="TRACE">Arguments: [  ]</msg>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-02-19T11:15:32.312378" level="TRACE">Arguments: [ '€44.50' ]</msg>
+<msg time="2025-02-19T11:15:32.312378" level="TRACE">Return: '€44.50'</msg>
+<msg time="2025-02-19T11:15:32.312378" level="INFO">${Add_Euro_to_OrderNowTotal} = €44.50</msg>
+<var>${Add_Euro_to_OrderNowTotal}</var>
+<arg>€${OrderNowTotal}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.312378" elapsed="0.000536"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-02-19T11:15:32.313442" level="TRACE">Arguments: [ '€44.50' | '€44.50' ]</msg>
+<msg time="2025-02-19T11:15:32.313509" level="DEBUG">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'str'&gt;</msg>
+<msg time="2025-02-19T11:15:32.313509" level="TRACE">Return: None</msg>
+<arg>${Add_Euro_to_OrderNowTotal}</arg>
+<arg>${CartTotal}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.312914" elapsed="0.000595"/>
+</kw>
+<msg time="2025-02-19T11:15:32.313509" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:32.311378" elapsed="0.002131"/>
+</kw>
+<kw name="Empty the Cart at the end of the test" owner="CartKeywords" type="TEARDOWN">
+<msg time="2025-02-19T11:15:32.314145" level="TRACE">Arguments: [  ]</msg>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:32.314778" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:32.316056" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:32.319773" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:15:32.319773" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.315414" elapsed="0.004359"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:32.320414" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:32.320414" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:32.321055" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.320414" elapsed="0.000641"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:32.321055" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:32.321055" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:32.321693" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:32.314778" elapsed="0.006915"/>
+</kw>
+<while condition="${is_Cart_Empty} != True">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:32.322941" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:32.322941" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:15:32.323690" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:32.531015" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:32.531015" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.322299" elapsed="0.208716"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:32.535789" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:32.539074" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:34.893347" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:15:34.893392" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:32.538308" elapsed="2.355084"/>
+</kw>
+<msg time="2025-02-19T11:15:34.893392" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:15:32.533052" elapsed="2.360892"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:34.894522" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:34.895635" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:34.899021" level="TRACE">Return: 0</msg>
+<msg time="2025-02-19T11:15:34.900026" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:34.894522" elapsed="0.005504"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:34.900026" level="TRACE">Arguments: [ '0 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:34.900026" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:34.900026" level="INFO">${isExists} = False</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:34.900026" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:34.901028" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:34.901028" level="TRACE">Return: False</msg>
+<msg time="2025-02-19T11:15:34.901028" level="INFO">${is_Cart_Empty} = False</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:34.893944" elapsed="0.007084"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:32.321693" elapsed="2.579335"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:34.902566" level="TRACE">Arguments: [ '(//span[@class="product-remove"])[1]' ]</msg>
+<msg time="2025-02-19T11:15:34.902566" level="INFO">Clicks the element '(//span[@class="product-remove"])[1]'.</msg>
+<msg time="2025-02-19T11:15:34.904134" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:35.806504" level="DEBUG">Clicked element: '(//span[@class="product-remove"])[1]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:35.806504" level="TRACE">Return: None</msg>
+<arg>(${Remove_Button})[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:34.901028" elapsed="0.906473"/>
+</kw>
+<kw name="Wait For Element To Be Hidden" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:35.808711" level="TRACE">Arguments: [ ${locator}='css=.blockOverlay:nth-child(3)' ]</msg>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-02-19T11:15:35.809533" level="TRACE">Arguments: [ 'css=.blockOverlay:nth-child(3)' | &lt;ElementState.hidden: 8&gt; | datetime.timedelta(seconds=90) ]</msg>
+<msg time="2025-02-19T11:15:37.609860" level="INFO">Waited for Element with selector css=.blockOverlay:nth-child(3) at state hidden</msg>
+<msg time="2025-02-19T11:15:37.610501" level="TRACE">Return: None</msg>
+<arg>${locator}</arg>
+<arg>hidden</arg>
+<arg>90s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-02-19T11:15:35.809533" elapsed="1.800968"/>
+</kw>
+<msg time="2025-02-19T11:15:37.611508" level="TRACE">Return: None</msg>
+<arg>css=.blockOverlay:nth-child(3)</arg>
+<status status="PASS" start="2025-02-19T11:15:35.807772" elapsed="1.803736"/>
+</kw>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:37.612653" level="TRACE">Arguments: [ ${Element Locator}="//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:37.613364" level="TRACE">Arguments: [ "//*[contains(text(),'Your cart is currently empty.')]" ]</msg>
+<msg time="2025-02-19T11:15:37.617749" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:37.617749" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.612739" elapsed="0.005010"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:37.618334" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:37.618334" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:37.618334" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.617749" elapsed="0.000585"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:37.618334" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:37.618334" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:37.618334" level="INFO">${is_Cart_Empty} = True</msg>
+<var>${is_Cart_Empty}</var>
+<arg>//*[contains(text(),'Your cart is currently empty.')]</arg>
+<status status="PASS" start="2025-02-19T11:15:37.611508" elapsed="0.006826"/>
+</kw>
+<status status="PASS" start="2025-02-19T11:15:34.901028" elapsed="2.717306"/>
+</iter>
+<status status="PASS" start="2025-02-19T11:15:32.321693" elapsed="5.297666"/>
+</while>
+<kw name="Does Element Exist" owner="CommonKeywords">
+<msg time="2025-02-19T11:15:37.619359" level="TRACE">Arguments: [ ${Element Locator}='//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-02-19T11:15:37.620502" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:15:37.624304" level="TRACE">Return: 1</msg>
+<msg time="2025-02-19T11:15:37.624304" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${Element Locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.619359" elapsed="0.004945"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:37.624304" level="TRACE">Arguments: [ '1 == 1' | '${True}' | '${False}' ]</msg>
+<msg time="2025-02-19T11:15:37.625317" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:37.625317" level="INFO">${isExists} = True</msg>
+<var>${isExists}</var>
+<arg>${count} == 1</arg>
+<arg>${True}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.624304" elapsed="0.001013"/>
+</kw>
+<return>
+<value>${isExists}</value>
+<status status="PASS" start="2025-02-19T11:15:37.625317" elapsed="0.000000"/>
+</return>
+<msg time="2025-02-19T11:15:37.625317" level="TRACE">Return: True</msg>
+<msg time="2025-02-19T11:15:37.625317" level="INFO">${isPresent} = True</msg>
+<var>${isPresent}</var>
+<arg>${Order_Now_Button}</arg>
+<status status="PASS" start="2025-02-19T11:15:37.619359" elapsed="0.005958"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2025-02-19T11:15:37.626317" level="TRACE">Arguments: [ 'True == True' | 'Click' | '${Order_Now_Button}' ]</msg>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-19T11:15:37.627307" level="TRACE">Arguments: [ '//*[@id="main-menu"]//a[text()="order now"]' ]</msg>
+<msg time="2025-02-19T11:15:37.627307" level="INFO">Clicks the element '//*[@id="main-menu"]//a[text()="order now"]'.</msg>
+<msg time="2025-02-19T11:15:37.628304" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}</msg>
+<msg time="2025-02-19T11:15:39.765810" level="DEBUG">Clicked element: '//*[@id="main-menu"]//a[text()="order now"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false, "trial": false}' successfully.</msg>
+<msg time="2025-02-19T11:15:39.765810" level="TRACE">Return: None</msg>
+<arg>${Order_Now_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.626317" elapsed="2.140499"/>
+</kw>
+<msg time="2025-02-19T11:15:39.766816" level="TRACE">Return: None</msg>
+<arg>${isPresent} == True</arg>
+<arg>Click</arg>
+<arg>${Order_Now_Button}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T11:15:37.625317" elapsed="2.141499"/>
+</kw>
+<msg time="2025-02-19T11:15:39.766816" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-02-19T11:15:32.314145" elapsed="7.452671"/>
+</kw>
+<msg time="2025-02-19T11:15:39.768813" level="INFO">Set timeout to: 10000</msg>
+<doc>Verify the donuts ordered are added to the cart</doc>
+<status status="PASS" start="2025-02-19T11:15:21.601065" elapsed="18.165751"/>
+</test>
+<doc>Test that verifys when I choose an item the total is reflected in the Cart</doc>
+<status status="PASS" start="2025-02-19T11:14:34.682185" elapsed="65.087627"/>
+</suite>
+<status status="PASS" start="2025-02-19T11:14:34.679538" elapsed="65.093869"/>
+</suite>
+<suite id="s1-s3" name="1000 Close Browser" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\1000_Close_Browser">
+<suite id="s1-s3-s1" name="Close browser" source="D:\a\RobotDonuts\RobotDonuts\Robot_Tests\1000_Close_Browser\Close_browser.robot">
+<test id="s1-s3-s1-t1" name="Close the Browser" line="7">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-02-19T11:15:39.796149" level="TRACE">Arguments: [ 'ALL' ]</msg>
+<msg time="2025-02-19T11:15:40.538065" level="INFO">Closed all browsers</msg>
+<msg time="2025-02-19T11:15:40.538065" level="TRACE">Return: None</msg>
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-19T11:15:39.795180" elapsed="0.742885"/>
+</kw>
+<msg time="2025-02-19T11:15:43.313524" level="DEBUG">Suppress error Error: Browser has been closed. when setting timeout.</msg>
+<doc>Close the browser</doc>
+<status status="PASS" start="2025-02-19T11:15:39.793914" elapsed="0.744151"/>
+</test>
+<doc>Close the Browser</doc>
+<status status="PASS" start="2025-02-19T11:15:39.779073" elapsed="3.535000"/>
+</suite>
+<status status="PASS" start="2025-02-19T11:15:39.775300" elapsed="3.557813"/>
+</suite>
+<status status="PASS" start="2025-02-19T11:14:22.467333" elapsed="80.866374"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="offBeat Donut Tests on Chromium" id="s1" pass="5" fail="0" skip="0">offBeat Donut Tests on Chromium</stat>
+<stat name="001 Home Page" id="s1-s1" pass="1" fail="0" skip="0">offBeat Donut Tests on Chromium.001 Home Page</stat>
+<stat name="Open Home Page" id="s1-s1-s1" pass="1" fail="0" skip="0">offBeat Donut Tests on Chromium.001 Home Page.Open Home Page</stat>
+<stat name="002 Order Now Tests" id="s1-s2" pass="3" fail="0" skip="0">offBeat Donut Tests on Chromium.002 Order Now Tests</stat>
+<stat name="001 Order Scenarios" id="s1-s2-s1" pass="3" fail="0" skip="0">offBeat Donut Tests on Chromium.002 Order Now Tests.001 Order Scenarios</stat>
+<stat name="1000 Close Browser" id="s1-s3" pass="1" fail="0" skip="0">offBeat Donut Tests on Chromium.1000 Close Browser</stat>
+<stat name="Close browser" id="s1-s3-s1" pass="1" fail="0" skip="0">offBeat Donut Tests on Chromium.1000 Close Browser.Close browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
