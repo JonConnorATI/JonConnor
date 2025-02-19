@@ -96,17 +96,25 @@ I figured out how to create a yaml file for github actions but unfortunately thi
 ## Donuts <a name="Donuts"></a> <a href="https://github.com/JonConnorATI/Donuts" target="_blank">(Link to github repo)</a>
 This framework 'tests' the Irish donut bakers, <a href="https://offbeatdonuts.com/" target="_blank">offBeatDonuts</a>[^2]
 ### Features <a id="Dfeatures"></a>
-<ul>
-    <li id="OrderNow">Order Now Feature</li>
-        <ul>
-            <li>This feature has three scenarios. Each scenario adds more items and verifies the items added are included in the shopping cart</li>
-                <ul>
-                    <li id="Donuts_Economy">Economy, just adds the cheapest donuts </li>
-                    <li id="Donuts_Hungry">Hungry, selects 12 different types of donuts</li>
-                    <li id="Donuts_Luxury">Luxury, adds 2 dozen donuts, candles, card with messages and bows</li>
-                </ul>
-        </ul>        
-</ul>
+
+- Order Now Feature <a id="OrderNow"></a>
+
+![order now feature](/assets/images/ordernowfeature.png)
+
+  - This feature has three scenarios. Each scenario adds more items and verifies the items added are included in the shopping cart
+
+    - Economy Just add the cheapest donuts <a id="Donuts_Economy"></a>
+
+    ![Economy Donuts feature](/assets/images/economydonutsfeature.png)
+
+      - Hungry, selects 12 different types of donuts <a id="Donuts_Hungry"></a>
+
+    ![Hungry Donuts feature](/assets/images/hungrydonutsfeature.png)
+
+      - Luxury, adds 2 dozen donuts, candles, card with messages and bows <a id="Donuts_Luxury"></a>
+    
+    ![Luxury Donuts feature](/assets/images/luxurydonutsfeature.png)
+
 
 ### Reports <a id="Donuts_reports"></a>
 I created a yaml file in github actions that is set to kick off the test execution in the cloud. I added a Secret in the repository to store the cucumber token, so the executions via github actions are also published in the Cucumber cloud.
