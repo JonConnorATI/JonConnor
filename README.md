@@ -40,6 +40,12 @@ ____________________________________________________
 
 **[3. Robot Framework with Browser library (playwright)](#Robot_Donuts)**
   * [Robot Donuts](#RobotDonuts)
+    * [Keyword Driven](#keyword-driven)
+    * [Test Cases](#RobotTestCases)
+      * [Economy](#Robot_Economy)
+      * [Hungry](#Robot_Hungry)
+      * [Luxury](#Robot_Luxury)
+    * [Reports](#Robot_reports) 
 
 ____________________________________________________
 
@@ -190,14 +196,35 @@ The <a href="https://robotframework-browser.org/" target="_blank">Browser librar
 
 ## Robot Donuts <a name="RobotDonuts"></a> <a href="https://github.com/JonConnorATI/RobotDonuts" target="_blank">(Link to github repo)</a>
 The Cucumber Donuts framework was converted to work with Robot Framework
-### Keyword Driven
+### Keyword Driven <a id="keyword_driven"></a>
 Robot framework is Keyword driven, similiar to Cucumber, but not restricted to just using `Given` `When` `Then`. It describes it self as **ATDD** (*Acceptance Test Driven Development*) while Cucumber is **BDD** (*Business Driven Development*)
+
+## Test Cases <a id="RobotTestCases"></a>
+
+* Economy Test Case<a id="Robot_Economy"></a>
+
+  ![Economy Test Case](/assets/images/robotEconomy.png)
+
+* Hungry Test Case <a id="Robot_Hungry"></a>
+
+  ![Hungry Test Case](/assets/images/robotHungry.png)
+
+* Luxury Test Case <a id="Robot_Luxury"></a>
+
+  ![Luxury Test Case](/assets/images/robotLuxury.png)
 
 The test cases are very readable, all the steps are in plain language and map to a `*.resource` file where the code to interact with the application under test is stored. The code and the test steps are seperated.
 
-### Reports
+### Reports <a id="Robot_reports"></a>
 I created a yaml file in github actions that is set to kick off the test execution in the cloud. A report is exported to the instance of the workflow run and can be downloaded from the Artifacts section in the github actions page.
-View the latest run <a href="https://github.com/JonConnorATI/RobotDonuts/actions/runs/11809353226" target="_blank">here</a>
+
+View the latest github actions run <a href="https://github.com/JonConnorATI/RobotDonuts/actions/runs/11809353226" target="_blank">here</a>
+
+The reports are excellent and have lots of useful detail. Please take a look at the reports generated for a run in Chrome and Firefox
+
+* <a href="https://github.com/JonConnorATI/RobotDonuts/actions/runs/11809353226" target="_blank">here</a>Chrome(/assets/Reports/chrome/offBeatTest-log.html)
+
+* [Firefox](/assets/Reports/firefox/offBeatTest-log.html)
 
 __________________________________
 
