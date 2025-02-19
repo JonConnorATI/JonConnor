@@ -222,9 +222,15 @@ View the latest github actions run <a href="https://github.com/JonConnorATI/Robo
 
 The reports are excellent and have lots of useful detail. Please take a look at the reports generated for a run in Chrome and Firefox
 
-* <a href="https://cdn.jsdelivr.net/gh/JonConnorATI/JonConnor@Jon_Edits/assets/Reports/chrome/offBeatTest-log.html" target="_blank">Chrome</a>
+* <a href="https://raw.githack.com/JonConnorATI/JonConnor/Jon_Edits/assets/Reports/chrome/offBeatTest-log.html" target="_blank">Chrome</a>
 
-* <a href="https://github.com/JonConnorATI/JonConnor/blob/Jon_Edits/assets/Reports/firefox/offBeatTest-log.html" target="_blank">Firefox</a>
+* <a href="https://raw.githack.com/JonConnorATI/JonConnor/Jon_Edits/assets/Reports/firefox/offBeatTest-log.html" target="_blank">Firefox</a>
+
+You can expand and collapse the sections in the Test Execution log and discover the layers of code mapped to each keyword.
+
+For example the ```add some candles``` keyword in the ```Customer is Hungry``` Test Case, is made up of sub keywords ```Wait For Element To Be Visible``` and ```Click```
+
+![Report Snippet](/assets/images/reportRobot.png)
 
 __________________________________
 
