@@ -62,7 +62,7 @@ ____________________________________________________
 
 ______________________________________________________________________________________
 
-# Cucumber Frameworks with Java/Selenium <a name="CucumberFrameworks"></a>
+# 1. Cucumber Frameworks with Java/Selenium <a name="CucumberFrameworks"></a>
 To help practice writing Cucumber features as well as getting more familiar with the Gherkin syntax and how it integrates with Java I created two frameworks that 'test' existing commercial websites
 
 ## Shopping<a name="Shopping"></a> <a href="https://github.com/JonConnorATI/ShopMandM" target="_blank">(Link to github repo)</a>
@@ -130,7 +130,7 @@ View the latest run <a href="https://reports.cucumber.io/reports/ae8d4eea-eaf4-4
 _______________
 
 
-# Page Object Model with Java/Selenium/TestNG <a name="pom"></a>
+# 2. Page Object Model with Java/Selenium/TestNG <a name="pom"></a>
 I decided to convert the Cucumber framework Donuts into a page object model which runs the tests using TestNG, to get familiar with this popular framework method.
 
 ## POM Donuts <a name="pomdonuts"></a> <a href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
@@ -190,7 +190,7 @@ You can View the latest run <a href="https://github.com/JonConnorATI/donutsPageO
 
 ______________________________
 
-# Robot Framework with Browser Library (playwright) <a name="Robot_Donuts"></a>
+# 3. Robot Framework with Browser Library (playwright) <a name="Robot_Donuts"></a>
 After being introduced to Robot Framework by a colleague, I decided to transition the Cucumber framework into a Robot Framework so I could learn more about it.
 
 The <a href="https://robotframework-browser.org/" target="_blank">Browser library</a> is powered by playwright. 
@@ -235,7 +235,7 @@ For example the ```add some candles``` keyword in the ```Customer is Hungry``` T
 
 __________________________________
 
-# Other content that I have created <a name="other"></a>
+# 4. Other content that I have created <a name="other"></a>
 
 ## My Understanding of BDD <a name="bdd"></a>
 
@@ -263,7 +263,7 @@ Created this page to highlight my skills and explain a little bit more about mys
 
 ________________________________________________
 
-# Whats next? <a name="What"></a>
+# 5. Whats next? <a name="What"></a>
  - More to come, I'm currently looking at working with API's and restAssured. Check back soon
 
 ______________________________________________________
