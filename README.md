@@ -26,7 +26,9 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
          * [Luxury](#Donuts_Luxury)
      * [Reports](#Donuts_reports)
        
+       
 **[2. Page Object Model with Java/Selenium/TestNG](#pom)**
+
   * [<b>POM Donuts<b>](#pomdonuts)
      * [Test NG](#TestNG)
      * [Test Suite](#TestSuite)
@@ -36,6 +38,7 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
      * [Reports](#PomDonuts_reports)
    
 **[3. Robot Framework with Browser library (playwright)](#Robot_Donuts)**
+
   * [Robot Donuts](#RobotDonuts)
     * [Keyword Driven](#keyword-driven)
     * [Test Cases](#RobotTestCases)
@@ -45,6 +48,7 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
     * [Reports](#Robot_reports) 
 
 **[4. Other Content I have created](#other)**
+
   * [My Understanding of BDD](#bdd)
   * [Bug Reports](#Bugs)
   * [Grades](#grades)
