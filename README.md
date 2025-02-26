@@ -1,4 +1,4 @@
-# Jon Connor - Based in Dublin.<br><br>Software Tester - Manual and Automation 
+# Based in Dublin.<br><br>Software Tester - Manual and Automation 
 Welcome to my GitHub page!
 
 Here, you’ll find a collection of automation frameworks and various other projects I’ve created. I believe in learning by doing, so whenever I pick up a new skill or concept, I build practical examples to deepen my understanding and share my journey with others.
