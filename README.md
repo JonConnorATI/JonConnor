@@ -129,7 +129,7 @@ _______________
 # 2. Page Object Model with Java/Selenium/TestNG <a name="pom"></a>
 I decided to convert the Cucumber framework Donuts into a page object model which runs the tests using TestNG, to get familiar with this popular framework method.
 
-## POM Donuts <a name="pomdonuts"></a> <a href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
+## POM Donuts <a name="pomdonuts" href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">(Link to github repo)</a>
 The Cucumber Donuts framework was converted to work with Page Object/TestNG:
 
 - Test NG <a id="TestNG"></a>
