@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-20T21:26:01.316326" rpa="true" schemaversion="5">
+<suite id="s1" name="EnablementTeamTests" source="C:\Users\jonathan.connor\PycharmProjects\EnablementTeamTests\Robot_Tests\DocumentImportTests\Test1.robot">
+<test id="s1-t1" name="TASK 1 - Verify the text in the source document matches the text in the draft and published documents" line="13">
+<kw name="Extract text remove space and return a list">
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Arguments: [ ${File}='Uploaded_files/Source.docx' ]</msg>
+<kw name="Extract Text">
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Arguments: [ ${File_location}='Uploaded_files/Source.docx' ]</msg>
+<kw name="Read Docx File" owner="docs">
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Arguments: [ 'Uploaded_files/Source.docx' ]</msg>
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Return: 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.972375" level="INFO">${text} = Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search...</msg>
+<var>${text}</var>
+<arg>${File_location}</arg>
+<doc>This creates a keyword named "Read docx File"
+This keyword takes one argument, which is a path to a specified .docx file.
+passed in like this, for eg ${CURDIR}/${Download_File_Name}.
+It returns the text from the document.</doc>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Return: 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.972375" level="INFO">${text} = Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search...</msg>
+<var>${text}</var>
+<arg>${File}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Space and Line Breaks from the string">
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Arguments: [ ${string}='Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<kw name="Remove All Space And Breaks" owner="docs">
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Arguments: [ 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.972375" level="INFO">${list} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${list}</var>
+<arg>${string}</arg>
+<doc>This keyword takes one argument, which is the string variable name
+It returns the individual sentences as items in a list</doc>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.972375" level="INFO">${list} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${list}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.972375" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.972375" level="INFO">${source_text} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${source_text}</var>
+<arg>${Source}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.013781"/>
+</kw>
+<kw name="Extract text remove space and return a list">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${File}='Uploaded_files/Draft.docx' ]</msg>
+<kw name="Extract Text">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${File_location}='Uploaded_files/Draft.docx' ]</msg>
+<kw name="Read Docx File" owner="docs">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ 'Uploaded_files/Draft.docx' ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: 'TestJonC\n\nHeading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${text} = TestJonC
+
+Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword...</msg>
+<var>${text}</var>
+<arg>${File_location}</arg>
+<doc>This creates a keyword named "Read docx File"
+This keyword takes one argument, which is a path to a specified .docx file.
+passed in like this, for eg ${CURDIR}/${Download_File_Name}.
+It returns the text from the document.</doc>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: 'TestJonC\n\nHeading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${text} = TestJonC
+
+Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword...</msg>
+<var>${text}</var>
+<arg>${File}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Space and Line Breaks from the string">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${string}='TestJonC\n\nHeading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<kw name="Remove All Space And Breaks" owner="docs">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ 'TestJonC\n\nHeading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['TestJonC',
+ 'Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${list} = ['TestJonC', 'Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a k...</msg>
+<var>${list}</var>
+<arg>${string}</arg>
+<doc>This keyword takes one argument, which is the string variable name
+It returns the individual sentences as items in a list</doc>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['TestJonC',
+ 'Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${list} = ['TestJonC', 'Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a k...</msg>
+<var>${list}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['TestJonC',
+ 'Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${Draft_text_1} = ['TestJonC', 'Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a k...</msg>
+<var>${Draft_text_1}</var>
+<arg>${Draft}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Extract text remove space and return a list">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${File}='Uploaded_files/Published.docx' ]</msg>
+<kw name="Extract Text">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${File_location}='Uploaded_files/Published.docx' ]</msg>
+<kw name="Read Docx File" owner="docs">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ 'Uploaded_files/Published.docx' ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${text} = Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search...</msg>
+<var>${text}</var>
+<arg>${File_location}</arg>
+<doc>This creates a keyword named "Read docx File"
+This keyword takes one argument, which is a path to a specified .docx file.
+passed in like this, for eg ${CURDIR}/${Download_File_Name}.
+It returns the text from the document.</doc>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${text} = Heading 1
+
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search...</msg>
+<var>${text}</var>
+<arg>${File}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Space and Line Breaks from the string">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ${string}='Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<kw name="Remove All Space And Breaks" owner="docs">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ 'Heading 1\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.\n\nHeading 2\n\nTo make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.\n\nThemes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.\n\nHeading 3\n\nSave time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.\n\nReading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.\n\nVideo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.' ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${list} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${list}</var>
+<arg>${string}</arg>
+<doc>This keyword takes one argument, which is the string variable name
+It returns the individual sentences as items in a list</doc>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${list} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${list}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list}</value>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.']</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">${Published_text} = ['Heading 1', 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to se...</msg>
+<var>${Published_text}</var>
+<arg>${Published}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Remove From List" owner="Collections">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ['TestJonC',
+ 'Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'] | '0' ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: 'TestJonC'</msg>
+<arg>${Draft_text_1}</arg>
+<arg>0</arg>
+<doc>Removes and returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Compare Test" owner="Jon">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'] | ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'] ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">Vital Law has 9 TimeArc has 9
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: None</msg>
+<arg>${source_text}</arg>
+<arg>${Draft_text_1}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<kw name="Compare Test" owner="Jon">
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Arguments: [ ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'] | ['Heading 1',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.',
+ 'Heading 2',
+ 'To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.',
+ 'Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.',
+ 'Heading 3',
+ 'Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.',
+ 'Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.',
+ 'Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.'] ]</msg>
+<msg time="2025-03-20T21:26:01.986632" level="INFO">Vital Law has 9 TimeArc has 9
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match
+Exact Match</msg>
+<msg time="2025-03-20T21:26:01.986632" level="TRACE">Return: None</msg>
+<arg>${source_text}</arg>
+<arg>${Published_text}</arg>
+<status status="PASS" start="2025-03-20T21:26:01.986632" elapsed="0.000000"/>
+</kw>
+<msg time="2025-03-20T21:26:02.032396" level="INFO">Starting Browser process C:\Users\jonathan.connor\PycharmProjects\EnablementTeamTests\.venv\Lib\site-packages\Browser\wrapper\index.js using port 55021</msg>
+<msg time="2025-03-20T21:26:02.032396" level="INFO">Node startup parameters: ['node', 'C:\\Users\\jonathan.connor\\PycharmProjects\\EnablementTeamTests\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55021']</msg>
+<msg time="2025-03-20T21:26:03.066256" level="DEBUG">Connected to the playwright process at port 55021: body: "OK"
+</msg>
+<msg time="2025-03-20T21:26:03.098043" level="DEBUG">Suppress error Error: Browser has been closed. when setting timeout.</msg>
+<status status="PASS" start="2025-03-20T21:26:01.972375" elapsed="0.014257"/>
+</test>
+<status status="PASS" start="2025-03-20T21:26:01.316326" elapsed="1.781717"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="EnablementTeamTests" id="s1" pass="1" fail="0" skip="0">EnablementTeamTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

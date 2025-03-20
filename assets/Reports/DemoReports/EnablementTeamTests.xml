@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EnablementTeamTests" tests="1" errors="0" failures="0" skipped="0" time="1.782" timestamp="2025-03-20T21:26:01.316326">
+<testcase classname="EnablementTeamTests" name="TASK 1 - Verify the text in the source document matches the text in the draft and published documents" time="0.014">
+</testcase>
+</testsuite>
