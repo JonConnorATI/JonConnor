@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API Testing" tests="8" errors="0" failures="0" skipped="0" time="9.926" timestamp="2025-05-02T17:12:08.683710">
+<testcase classname="API Testing" name="Test 1a: Get all the booking ID's" time="0.567">
+</testcase>
+<testcase classname="API Testing" name="Test 1b: Get all the bookings with a specific first name, &quot;John&quot;" time="1.857">
+</testcase>
+<testcase classname="API Testing" name="Test 1c: Get all the bookings with a specific name, &quot;Sally Brown&quot;" time="0.561">
+</testcase>
+<testcase classname="API Testing" name="Test 2: Get the information for the booking with id=1" time="0.510">
+</testcase>
+<testcase classname="API Testing" name="Test 3: Create a booking (Refactored)" time="1.028">
+</testcase>
+<testcase classname="API Testing" name="Test 4: Update Booking" time="2.104">
+</testcase>
+<testcase classname="API Testing" name="Test 5: Partially Update the booking that has ID=2 with new additional needs" time="1.522">
+</testcase>
+<testcase classname="API Testing" name="Test 6: Delete a booking by ID=101" time="1.555">
+</testcase>
+<properties>
+<property name="Documentation" value="API_METHODS"/>
+</properties>
+</testsuite>

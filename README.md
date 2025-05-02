@@ -47,14 +47,27 @@ Feel free to connect with me on <a href="https://www.linkedin.com/in/jonconnordu
       * [Luxury](#Robot_Luxury)
     * [Reports](#Robot_reports) 
 
-**[4. Other Content I have created](#other)**
+**[4. Robot Framework with RequestsLibrary](#Robot_requests)**
+
+  * [API Testing](#API)
+    * [API Methods](#Methods)
+      * [GET](#get)
+      * [POST](#post)
+      * [PUT](#put)
+      * [PATCH](#patch)
+      * [DELETE](#delete)
+     * [Reports](#API_REPORTS)
+
+
+
+**[5. Other Content I have created](#other)**
 
   * [My Understanding of BDD](#bdd)
   * [Bug Reports](#Bugs)
   * [Grades](#grades)
   * [About Me](#aboutme)
 
-**[5. Whats Next?](#What)**
+**[6. Whats Next?](#What)**
 
 ______________________________________________________________________________________
 
@@ -231,7 +244,45 @@ For example the ```add some candles``` keyword in the ```Customer is Hungry``` T
 
 __________________________________
 
-# 4. Other content that I have created <a name="other"></a>
+# 4. Robot Framework with RequestsLibrary <a name="Robot_requests"></a>
+
+This repository shows how to use the keywords in the Robot Framework Requests Library to construct API requests.
+
+## API Testing <a name="API"></a> <a href="https://github.com/JonConnorATI/APITesting" target="_blank">(Link to github repo)</a>
+
+The framework 'tests' the <a href="https://restful-booker.herokuapp.com/" target="_blank">Restful-Booker</a>[^3] site using the <a href="https://restful-booker.herokuapp.com/apidoc/index.html" target="_blank">detailed API documentation</a> contained in the website.
+
+We step through each API method and create the header and body for each request method and how to verify the response using the Robot Framework keywords.
+
+### API Request Methods <a name="Methods"></a>
+
+  #### GET <a name="get"></a>
+  ![GET API METHODS](assets\images\Get_API.png)
+
+  #### POST <a name="post"></a>
+  ![POST API METHODS](assets\images\Post_API.png)
+
+  #### PUT <a name="put"></a>
+  ![PUT API METHODS](assets\images\Put_API.png)
+
+  #### PATCH <a name="patch"></a>
+  ![PATCH API METHODS](assets\images\Patch_API.png)
+  
+  #### DELETE <a name="delete"></a>
+  ![DELETE API METHODS](assets\images\Delete_API.png)
+
+### Reports <a name="#API_REPORTS"></a>
+
+Please take a look at the reports generated for a test run
+
+* <a href="https://raw.githack.com/JonConnorATI/JonConnor/Jon_Edits/assets/Reports/API_Reports/API_TEST-log.html" target="_blank">API TEST REPORT</a>
+
+You can expand and collapse the sections in the Test Execution log and discover the layers of code mapped to each keyword.
+
+__________________________________
+
+
+# 5. Other content that I have created <a name="other"></a>
 
 ## My Understanding of BDD <a name="bdd"></a>
 
@@ -259,8 +310,8 @@ Created this page to highlight my skills and explain a little bit more about mys
 
 ________________________________________________
 
-# 5. Whats next? <a name="What"></a>
- - More to come, I'm currently looking at working with API's and restAssured. Check back soon
+# 6. Whats next? <a name="What"></a>
+ - More to come, I'm currently looking at working with Robot Framework and <a href="https://rpaframework.org/libdoc/RPA_Salesforce.html" target="_blank">RPA.Salesforce library</a>. 
 
 ______________________________________________________
 
@@ -269,7 +320,12 @@ ______________________________________________________
 
 ##### FOOTNOTES
 [^1]: I did not have any involvement with the actual testing or development of the M and M website
+
 [^2]: I did not have any involvement with the actual testing or development of the OffBeatDonuts website
+
+[^3]: An API playground created by <a href="http://mwtestconsultancy.co.uk/" target="_blank">Mark Winteringham</a> for those wanting to learn more about API testing and tools.
+
+
 <!--
 [Bug Reports](#Bugs)
   * [Grades](#grades)
