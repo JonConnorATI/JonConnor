@@ -257,19 +257,19 @@ We step through each API method and create the header and body for each request 
 ### API Request Methods <a name="Methods"></a>
 
   #### GET <a name="get"></a>
-  ![GET API METHODS](assets\images\Get_API.png)
+  ![GET](assets\images\Get_API.png)
 
   #### POST <a name="post"></a>
-  ![POST API METHODS](assets\images\Post_API.png)
+  ![POST](assets\images\Post_API.png)
 
   #### PUT <a name="put"></a>
-  ![PUT API METHODS](assets\images\Put_API.png)
+  ![PUT](assets\images\Put_API.png)
 
   #### PATCH <a name="patch"></a>
-  ![PATCH API METHODS](assets\images\Patch_API.png)
+  ![PATCH](assets\images\Patch_API.png)
   
   #### DELETE <a name="delete"></a>
-  ![DELETE API METHODS](assets\images\Delete_API.png)
+  ![DELETE](assets\images\Delete_API.png)
 
 ### Reports <a name="#API_REPORTS"></a>
 
