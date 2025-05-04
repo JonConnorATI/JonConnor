@@ -276,7 +276,7 @@ We step through each API method and create the header and body for each request 
 
 ![DELETE](/assets/images/Delete_API.png)
 
-### Reports <a name="#API_REPORTS"></a>
+### Reports <a name="API_REPORTS"></a>
 
 Please take a look at the reports generated for a test run
 
